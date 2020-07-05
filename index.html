@@ -282,75 +282,9 @@
 
 <p>等价于：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] scores = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br><span class="line"><span class="comment">//new int[]的[]不能填入数据，必须为空</span></span><br></pre></td></tr></table></figure>
-
-<h6 id="1-3-使用循环操作数组"><a href="#1-3-使用循环操作数组" class="headerlink" title="1.3 使用循环操作数组"></a>1.3 使用循环操作数组</h6><p>在实际开发中我们会经常使用一些循环操作以输出数组中的数据，<strong>数组名.length</strong>代表获取数组的长度，但要小心的是<strong>数组的越界问题，</strong>即数组的下标范围有界限限制。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String[] hobbys = &#123; <span class="string">"sports"</span>, <span class="string">"game"</span>, <span class="string">"movie"</span> &#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; hobbys.length; i++) &#123;</span><br><span class="line">	System.out.println(hobbys[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="1-4-使用Arrays类操作Java中的数组"><a href="#1-4-使用Arrays类操作Java中的数组" class="headerlink" title="1.4 使用Arrays类操作Java中的数组"></a>1.4 使用Arrays类操作Java中的数组</h6><p>Arrays 类是 Java 中提供的一个工具类，在 java.util 包中。该类中包含了一些方法用来直接操作数组，比如可直接实现数组的排序、搜索等。</p>
-<p>想要使用Arrays的方法，就得在程序之前导入包，语句为：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>排序</li>
-</ul>
-<p>使用语法为：<strong>Arrays.sort(数组名)；</strong></p>
-<ul>
-<li>将数组转换为字符串</li>
-</ul>
-<p>语法：<strong>Arrays.toString(数组名);</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导入Arrays类</span></span><br><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 定义一个字符串数组</span></span><br><span class="line">		String[] hobbies = &#123; <span class="string">"sports"</span>, <span class="string">"game"</span>, <span class="string">"movie"</span> &#125;;</span><br><span class="line">		<span class="comment">// 使用Arrays类的sort()方法对数组进行排序</span></span><br><span class="line">		Arrays.sort(hobbies);</span><br><span class="line">		<span class="comment">// 使用Arrays类的toString()方法将数组转换为字符串并输出</span></span><br><span class="line">		Arrays.toString(hobbies);</span><br><span class="line">		System.out.println(hobbies);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="1-5-使用foreach操作数组"><a href="#1-5-使用foreach操作数组" class="headerlink" title="1.5 使用foreach操作数组"></a>1.5 使用foreach操作数组</h6><p>foreach 并不是 Java 中的关键字，是 for 语句的特殊简化版本，在遍历数组、集合时， foreach 更简单便捷。从英文字面意思理解 foreach 也就是“ for 每一个”的意思</p>
-<p><strong>语法：</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (元素类型 元素变量 : 遍历对象) &#123;</span><br><span class="line">    代码块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>示例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 定义一个整型数组，保存成绩信息</span></span><br><span class="line">		<span class="keyword">int</span>[] scores = &#123; <span class="number">89</span>, <span class="number">72</span>, <span class="number">64</span>, <span class="number">58</span>, <span class="number">93</span> &#125;;</span><br><span class="line">		<span class="comment">// 对Arrays类对数组进行排序</span></span><br><span class="line">		Arrays.sort(scores);</span><br><span class="line">		<span class="comment">// 使用foreach遍历输出数组中的元素</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> score : scores) &#123;</span><br><span class="line">			System.out.println(score);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="1-6-二维数组"><a href="#1-6-二维数组" class="headerlink" title="1.6 二维数组"></a>1.6 二维数组</h6><p>和一维数组很相似，二维数组可以理解为是特殊的一维数组。二维数组有两个下标，分别表示第几行、第几列，同样的也是从0开始第一行。</p>
-<ul>
-<li>声明并分配空间</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//数据类型[] 数组名 = new 数据类型[行数][列数];</span></span><br><span class="line"><span class="keyword">int</span>[][] scores = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>][<span class="number">6</span>];</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>赋值</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.数组名[行索引][列索引] = 值;</span></span><br><span class="line"><span class="comment">//2.数据类型[][] 数据名 = &#123;&#123;值00, 值01, 值02&#125;，&#123;值10, 值11, 值12&#125;;</span></span><br><span class="line"><span class="comment">//给第一行第一列赋值</span></span><br><span class="line">num[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">12</span>;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>数组处理</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] num = &#123;&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;, &#123;<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>&#125;&#125;;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num.length; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; num[i]; j++) &#123;</span><br><span class="line">        System.out.print(num[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="二、方法"><a href="#二、方法" class="headerlink" title="二、方法"></a>二、方法</h5><h6 id="1-1-如何定义方法"><a href="#1-1-如何定义方法" class="headerlink" title="1.1 如何定义方法"></a>1.1 如何定义方法</h6><p>语法：访问修饰符 返回值类型 方法名(参数列表){方法体}</p>
-<p>主要是包含下面四种：</p>
-<ul>
-<li>无参无返回值</li>
-<li>无参带返回值</li>
-<li>有参无返回值</li>
-<li>有参带返回值</li>
-</ul>
-<h6 id="1-2-无参无返回值"><a href="#1-2-无参无返回值" class="headerlink" title="1.2 无参无返回值"></a>1.2 无参无返回值</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[], args)</span> </span>&#123;</span><br><span class="line">        HelloWorld hello = <span class="keyword">new</span> HelloWorld();</span><br><span class="line">        hello.show();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"You Hou~~"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="1-3-无参有返回值"><a href="#1-3-无参有返回值" class="headerlink" title="1.3 无参有返回值"></a>1.3 无参有返回值</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;     </span><br><span class="line">		<span class="comment">// 创建名为hello的对象</span></span><br><span class="line">		HelloWorld hello = <span class="keyword">new</span> HelloWorld();     </span><br><span class="line">		<span class="comment">// 调用hello对象的calcAvg()方法，并将返回值保存在变量avg中</span></span><br><span class="line">		<span class="keyword">double</span> avg = hello.calcAvg();</span><br><span class="line">		System.out.println(<span class="string">"平均成绩为："</span> + avg);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// 定义一个返回值为double类型的方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">calcAvg</span><span class="params">()</span> </span>&#123;   </span><br><span class="line">		<span class="keyword">double</span> java = <span class="number">92.5</span>;</span><br><span class="line">		<span class="keyword">double</span> php = <span class="number">83.0</span>;</span><br><span class="line">		<span class="keyword">double</span> avg = (java + php) / <span class="number">2</span>; <span class="comment">// 计算平均值   </span></span><br><span class="line">		<span class="comment">// 使用return返回值</span></span><br><span class="line">        <span class="keyword">return</span> avg;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>注意</strong></p>
-<ul>
-<li>如果方法的返回类型为void，则方法中不能使用return</li>
-<li>方法的返回值最多只有一个，不能返回多个值</li>
-<li>方法返回值的类型必须要相同</li>
-</ul>
-<h6 id="1-4-有参无返回值"><a href="#1-4-有参无返回值" class="headerlink" title="1.4 有参无返回值"></a>1.4 有参无返回值</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 创建对象，对象名为hello</span></span><br><span class="line">		HelloWorld hello = <span class="keyword">new</span> HelloWorld();</span><br><span class="line">        <span class="comment">// 调用方法，传入两门课程的成绩</span></span><br><span class="line">		hello.calcAvg(<span class="number">94</span>, <span class="number">81</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 功能：计算两门课程考试成绩的平均分并输出平均分</span></span><br><span class="line"><span class="comment">	 * 定义一个包含两个参数的方法，用来传入两门课程的成绩</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">calcAvg</span><span class="params">(<span class="keyword">double</span> score1, <span class="keyword">double</span> score2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">double</span> avg;</span><br><span class="line">        avg = (score1 + score2) / <span class="number">2</span>;</span><br><span class="line">        System.out.println(<span class="string">"平均分:"</span> + avg);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>1.5 有参带返回值</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		HelloWorld hello = <span class="keyword">new</span> HelloWorld();</span><br><span class="line">		<span class="keyword">int</span>[] scores = &#123;<span class="number">79</span>,<span class="number">52</span>,<span class="number">98</span>,<span class="number">81</span>&#125;;        </span><br><span class="line">		<span class="comment">//调用方法，传入成绩数组，并获取成绩的个数</span></span><br><span class="line">		<span class="keyword">int</span> count = hello.sort(scores);        </span><br><span class="line">		System.out.println(<span class="string">"共有"</span>+count+<span class="string">"个成绩信息！"</span>);</span><br><span class="line">	&#125;    </span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 功能：将考试成绩排序并输出，返回成绩的个数</span></span><br><span class="line"><span class="comment">	 * 定义一个包含整型数组参数的方法，传入成绩数组</span></span><br><span class="line"><span class="comment">	 * 使用Arrays类对成绩数组进行排序并输出</span></span><br><span class="line"><span class="comment">	 * 方法执行后返回数组中元素的个数</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] scores)</span></span>&#123;</span><br><span class="line">		Arrays.sort(scores);		System.out.println(Arrays.toString(scores));	</span><br><span class="line">        <span class="comment">//返回数组中元素的个数</span></span><br><span class="line">        <span class="keyword">return</span> scores.length;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="三、编程练习"><a href="#三、编程练习" class="headerlink" title="三、编程练习"></a>三、编程练习</h5><p>定义一个包含整型数组参数的方法，用来接收成绩数组，进行成绩排序并输出前三名</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;    </span><br><span class="line">    <span class="comment">//完成 main 方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] scores = &#123;<span class="number">89</span>, <span class="number">23</span>, <span class="number">64</span>, <span class="number">91</span>, <span class="number">119</span>, <span class="number">52</span>, <span class="number">73</span>&#125;;</span><br><span class="line">        HelloWorld hello = <span class="keyword">new</span> HelloWorld();</span><br><span class="line">        System.out.println(<span class="string">"考试成绩的前三名为:"</span>);</span><br><span class="line">        hello.scort(scores);</span><br><span class="line">    &#125;    </span><br><span class="line">    <span class="comment">//定义方法完成成绩排序并输出前三名的功能</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">scort</span><span class="params">(<span class="keyword">int</span>[] scores)</span> </span>&#123;</span><br><span class="line">        Arrays.sort(scores);</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = scores.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (scores[i] &lt; <span class="number">0</span> || scores[i] &gt; <span class="number">100</span>) &#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            num++;</span><br><span class="line">            <span class="keyword">if</span> (num &gt; <span class="number">3</span>) &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(scores[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>解析：首先定义好数组，创建hello对象，之后写相应的方法，最后在main函数中使用hello.scort(scorts)进行调用。</p>
-
+        
+          <a class="article-more-a" href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/#more">more >></a>
+        
       
 
       
@@ -363,68 +297,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Vue入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/30/Vue%E5%85%A5%E9%97%A8/">Vue入门</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/30/Vue%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-05-30T12:23:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/30/Vue%E5%85%A5%E9%97%A8/">展开全文 >></a>
         </p>
       
 
@@ -681,19 +553,9 @@
 <p>JRE：Java运行环境，没有JRE就不能把Java运行得起来。</p>
 <p>所以说，JDK、JRE和JVM的关系时这样的：</p>
 <p>JDK{JRE{JVM}}，互相包含的关系。</p>
-<h5 id="程序的移植"><a href="#程序的移植" class="headerlink" title="程序的移植"></a>程序的移植</h5><p>​    右击项目名称–&gt;Properties–&gt;Location找到位置</p>
-<p>​    File–&gt;import–&gt;Existing Projects into Workspace–&gt;Browse找到项目；</p>
-<h5 id="应该如何学习Java呢？？（劝告自己，不要懒）"><a href="#应该如何学习Java呢？？（劝告自己，不要懒）" class="headerlink" title="应该如何学习Java呢？？（劝告自己，不要懒）"></a>应该如何学习Java呢？？（劝告自己，不要懒）</h5><ul>
-<li><p>多练;一定要多练，不然真死下去了！==_==</p>
-</li>
-<li><p>多问;有啥多问问师傅，面向百度编程</p>
-</li>
-<li><p>自己动手调试错误;自己动手，丰衣足食，别人不能帮你一辈子，一定要自己学会如何去调试自己的bug；</p>
-</li>
-<li><p>复习总结；咋说呢，写这个blog不就是为了复习总结的么？坚持下去哈~</p>
-</li>
-</ul>
-
+        
+          <a class="article-more-a" href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/#more">more >></a>
+        
       
 
       
@@ -773,75 +635,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/05/28/%E6%AF%95%E8%AE%BE-%E6%96%B0%E9%97%BB%E7%B1%BB%E7%9F%AD%E8%AE%AF%E5%AE%9E%E6%97%B6%E7%83%AD%E7%82%B9%E5%B1%95%E7%A4%BA%E5%B9%B3%E5%8F%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-学习Vue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/28/%E5%AD%A6%E4%B9%A0Vue/">学习Vue</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/28/%E5%AD%A6%E4%B9%A0Vue/" class="archive-article-date">
-  	<time datetime="2020-05-28T07:09:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>build目录下放的是webpack的配置文件，不动</p>
-<p>config是针对线上环境和开发环境的配置文件，可以不动</p>
-<p>node_modules是项目的依赖</p>
-<p>src源代码</p>
-<p>static静态文件放置</p>
-<p>index.html中便是整体的HTML，包含一个APP的挂载点</p>
-<p>单文件组件语法，在一个.vur文件中含有一个组件里必须的所有内容</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/28/%E5%AD%A6%E4%B9%A0Vue/">展开全文 >></a>
         </p>
       
 
