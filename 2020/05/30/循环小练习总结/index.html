@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>循环小练习总结 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="做了两个循环小练习，总结一下题目1：为指定成绩加分，直到分数大于等于 60 为止，输出加分前和加分后的成绩，并统计加分的次数这题肯定巨简单，至少我当时做这个小练习的时候是这么想的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="循环小练习总结">
+<meta property="og:url" content="http://yoursite.com/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="做了两个循环小练习，总结一下题目1：为指定成绩加分，直到分数大于等于 60 为止，输出加分前和加分后的成绩，并统计加分的次数这题肯定巨简单，至少我当时做这个小练习的时候是这么想的。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-30T10:09:55.000Z">
+<meta property="article:modified_time" content="2020-05-30T12:14:50.715Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-循环小练习总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/" class="article-date">
+  <time datetime="2020-05-30T10:09:55.000Z" itemprop="datePublished">2020-05-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      循环小练习总结
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="做了两个循环小练习，总结一下"><a href="#做了两个循环小练习，总结一下" class="headerlink" title="做了两个循环小练习，总结一下"></a>做了两个循环小练习，总结一下</h3><h6 id="题目1：为指定成绩加分，直到分数大于等于-60-为止，输出加分前和加分后的成绩，并统计加分的次数"><a href="#题目1：为指定成绩加分，直到分数大于等于-60-为止，输出加分前和加分后的成绩，并统计加分的次数" class="headerlink" title="题目1：为指定成绩加分，直到分数大于等于 60 为止，输出加分前和加分后的成绩，并统计加分的次数"></a>题目1：为指定成绩加分，直到分数大于等于 60 为止，输出加分前和加分后的成绩，并统计加分的次数</h6><p>这题肯定巨简单，至少我当时做这个小练习的时候是这么想的。</p>
+<a id="more"></a>
+
+<p><strong>1.直接提前规定好分数，循环判断完求</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 变量保存成绩</span></span><br><span class="line">        <span class="keyword">int</span> score = <span class="number">53</span>; </span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 变量保存加分次数</span></span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        System.out.println(<span class="string">"加分前成绩："</span> + score);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//打印输出加分前成绩 </span></span><br><span class="line">         <span class="keyword">while</span> (score &lt; <span class="number">60</span>) &#123;</span><br><span class="line">             score += <span class="number">1</span>;</span><br><span class="line">             count ++;</span><br><span class="line">         &#125;</span><br><span class="line">        <span class="comment">// 只要成绩小于60，就循环执行加分操作，并统计加分次数</span></span><br><span class="line">        <span class="comment">//打印输出加分后成绩，以及加分次数</span></span><br><span class="line">        System.out.println(<span class="string">"加分后成绩："</span> + score);</span><br><span class="line">        System.out.println(<span class="string">"共加了"</span> + count + <span class="string">"次！"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.问题来了，平常要是都是这题也就好了。。。加点难度？来个用户自由输入数字分数，智能一点</strong></p>
+<p>问题又来了：Python里面，输入直接n = input就行了，C里面直接来个scanf就成，但是java里面是个啥？woc，脑子是空的！</p>
+<p>后来看了别人的，才知道需要先使用一个scanner工具类，用于获取用户输入的分数。用法是啥呢？</p>
+<p><strong>Scanner工具类位于java.util包中，需要导入此包，语句为import jave.util.Scanner;</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">	Scanner input = <span class="keyword">new</span> Scanner(System.in);<span class="comment">//调用Scanner方法，创建Scanner对象，固定使用，记住就行</span></span><br><span class="line">	System.out.println(<span class="string">"请输入考试成绩："</span>);</span><br><span class="line">	<span class="keyword">int</span> score = input.nextInt();<span class="comment">//获取用户输入成绩并保存</span></span><br><span class="line">	<span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">	System.out.println(<span class="string">"加分前的成绩："</span> + score);</span><br><span class="line">	<span class="keyword">while</span> (score &lt; <span class="number">60</span>) &#123;</span><br><span class="line">		score ++;</span><br><span class="line">		count ++;</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println(<span class="string">"加分之后的成绩："</span> + score);</span><br><span class="line">	System.out.println(<span class="string">"一共加了"</span> + count + <span class="string">"次！"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>来一个快捷键：<strong>在输入syso之后，按住键盘alt + /，即可自动补全System.out,println();命令</strong></p>
+<p>OK，搞定</p>
+<h6 id="题目2：前一题的进阶练习，现在有三个班，每个班里面4个学生，分别计算每个班的平均成绩"><a href="#题目2：前一题的进阶练习，现在有三个班，每个班里面4个学生，分别计算每个班的平均成绩" class="headerlink" title="题目2：前一题的进阶练习，现在有三个班，每个班里面4个学生，分别计算每个班的平均成绩"></a>题目2：前一题的进阶练习，现在有三个班，每个班里面4个学生，分别计算每个班的平均成绩</h6><p>加一个二重循环，再使用上之前这个题目的输入Scanner，可以解决。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Score_next</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">		<span class="keyword">int</span> classNum = <span class="number">3</span>;</span><br><span class="line">		<span class="keyword">int</span> stuNum = <span class="number">4</span>;</span><br><span class="line">		<span class="keyword">double</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">double</span> avg = <span class="number">0</span>;</span><br><span class="line">		Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= classNum; i++) &#123;</span><br><span class="line">			sum = <span class="number">0</span>;</span><br><span class="line">			System.out.println(<span class="string">"请输入第"</span> + i +<span class="string">"个班级的分数！"</span>);</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= stuNum; j++) &#123;</span><br><span class="line">				System.out.println(<span class="string">"请输入第"</span> + j + <span class="string">"个人的分数"</span>);</span><br><span class="line">				<span class="keyword">int</span> score = input.nextInt();</span><br><span class="line">				sum += score;</span><br><span class="line">			&#125;</span><br><span class="line">			avg = sum / stuNum;</span><br><span class="line">			System.out.println(<span class="string">"平均分:"</span> + avg);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/" data-id="ckc8nj57f00045srh6frc8c90" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/05/30/Vue%E5%85%A5%E9%97%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Vue入门
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Java基础（三）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/05/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/">Java基础（四）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/30/Vue%E5%85%A5%E9%97%A8/">Vue入门</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/">循环小练习总结</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/">Java基础（三）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

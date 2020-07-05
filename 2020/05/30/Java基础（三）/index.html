@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Java基础（三） | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Java基础（三）–运算符与流程控制语句运算符算术运算符。赋值运算符、比较运算符、逻辑运算符、位运算符、三元运算符">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java基础（三）">
+<meta property="og:url" content="http://yoursite.com/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Java基础（三）–运算符与流程控制语句运算符算术运算符。赋值运算符、比较运算符、逻辑运算符、位运算符、三元运算符">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-30T05:27:03.000Z">
+<meta property="article:modified_time" content="2020-05-31T00:51:07.333Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Java基础（三）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/" class="article-date">
+  <time datetime="2020-05-30T05:27:03.000Z" itemprop="datePublished">2020-05-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Java基础（三）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Java基础（三）–运算符与流程控制语句"><a href="#Java基础（三）–运算符与流程控制语句" class="headerlink" title="Java基础（三）–运算符与流程控制语句"></a>Java基础（三）–运算符与流程控制语句</h3><h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><p>算术运算符。赋值运算符、比较运算符、逻辑运算符、位运算符、三元运算符</p>
+<a id="more"></a>
+
+<h6 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+、-、*、/、%、++、--;</span><br></pre></td></tr></table></figure>
+
+<p>赋值运算符</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=、+=、-=、*=、/=、%;</span><br></pre></td></tr></table></figure>
+
+<p>比较运算符</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">==、&gt;=、&lt;=、!=、&lt;、&gt;;</span><br><span class="line"><span class="comment">//结果均为布尔类型</span></span><br></pre></td></tr></table></figure>
+
+<p>逻辑运算符</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&amp;(与)、&amp;&amp;(短路与)、|(或)、||(短路或)、^;</span><br><span class="line"><span class="comment">//&amp;和&amp;&amp;的区别：&amp;的左边为false时，仍然会执行右边;当&amp;&amp;左边为false时，就不看右边了，||同理;</span></span><br></pre></td></tr></table></figure>
+
+<p>位运算符</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;(右移) &lt;&lt;(左移) &gt;&gt;&gt;(无符号右移)</span><br></pre></td></tr></table></figure>
+
+<p>三元运算符</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(布尔表达式) ? (表达式<span class="number">1</span>) : (表达式<span class="number">2</span>);</span><br><span class="line"><span class="comment">//当布尔表达式为true时，执行1，false为2;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h5><p>这里就不说太基础的东西了，直接来硬货。</p>
+<h6 id="if…else-if……else…"><a href="#if…else-if……else…" class="headerlink" title="if…else if……else…"></a>if…else if……else…</h6><p>多层if-else循环。用于实现多条件情况</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="title">void</span> <span class="params">(String[],args)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> age=<span class="number">25</span>;</span><br><span class="line">	    <span class="keyword">if</span> (age &gt;= <span class="number">60</span>) &#123;</span><br><span class="line">	        System.out.println(<span class="string">"老年"</span>);</span><br><span class="line">	    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="number">40</span> &lt;= age) &#123;</span><br><span class="line">	        System.out.println(<span class="string">"中年"</span>);</span><br><span class="line">	    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="number">18</span> &lt;= age) &#123;</span><br><span class="line">	        System.out.println(<span class="string">"少年"</span>);</span><br><span class="line">	    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (age &lt; <span class="number">18</span>) &#123;</span><br><span class="line">	        System.out.println(<span class="string">"童年"</span>);</span><br><span class="line">	    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="嵌套if循环"><a href="#嵌套if循环" class="headerlink" title="嵌套if循环"></a>嵌套if循环</h6><p>只有当外层循环条件成立时，才会去判断内层的if条件。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> score = <span class="number">94</span>;</span><br><span class="line">	String sex = <span class="string">"女"</span>;</span><br><span class="line">    <span class="keyword">if</span> (score &gt; <span class="number">80</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (sex.equals(<span class="string">"女"</span>)) &#123;</span><br><span class="line">            System.out.println(<span class="string">"进入女子决赛"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">"进入男子决赛"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       System.out.println(<span class="string">"你不行"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="switch条件语句"><a href="#switch条件语句" class="headerlink" title="switch条件语句"></a>switch条件语句</h6><p>当switch后面的表达式的值和case语句后面的值一样的时候，就从这个位置往下执行，如果没有匹配到case就执行default的代码</p>
+<ul>
+<li>switch后面的表达式的值的类型必须是<strong><em>字符型或者整型</em></strong></li>
+<li>case后面可以是<strong><em>常量</em></strong>，也可以使<strong><em>表达式</em></strong></li>
+<li>case匹配之后，会继续往下执行，如果遇到了break就停止没如果没有遇到就继续往下执行直到全部完成。</li>
+<li>default可以放在任何位置，也可以省略</li>
+<li>如果几个case实现的是同样色功能，则可以直接连写，如下代码</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">char</span> today=<span class="string">'日'</span>;</span><br><span class="line">	<span class="keyword">switch</span> (today) &#123;</span><br><span class="line">		<span class="keyword">case</span> <span class="string">'一'</span>:</span><br><span class="line">		<span class="keyword">case</span> <span class="string">'三'</span>:</span><br><span class="line">		<span class="keyword">case</span> <span class="string">'五'</span>:</span><br><span class="line">		System.out.println(<span class="string">"吃包子"</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="string">'二'</span>:</span><br><span class="line">		<span class="keyword">case</span> <span class="string">'四'</span>:</span><br><span class="line">		<span class="keyword">case</span> <span class="string">'六'</span>:</span><br><span class="line">		System.out.println(<span class="string">"吃油条"</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="string">'日'</span>:</span><br><span class="line">		System.out.println(<span class="string">"吃主席套餐"</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a>while语句</h6><p>判断while后面的条件是否成立，作为Boolean值传递，当条件为true时，执行循环内代码，重新循环，直到跳出循环体。特点是<strong>先判断，再执行</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">		<span class="keyword">int</span> i = <span class="number">1</span>; <span class="comment">// 代表 1 - 5 之间的数字</span></span><br><span class="line">        </span><br><span class="line">		<span class="comment">// 当变量小于等于 5 时执行循环</span></span><br><span class="line">		<span class="keyword">while</span> (i &lt;= <span class="number">5</span>) &#123;</span><br><span class="line">            </span><br><span class="line">			<span class="comment">// 输出变量的值，并且对变量加 1，以便于进行下次循环条件判断</span></span><br><span class="line">			System.out.println(i);</span><br><span class="line">			i++;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="do-while语句"><a href="#do-while语句" class="headerlink" title="do-while语句"></a>do-while语句</h6><p>不管啥条件，先干一顿再说，所以说是先执行一下循环体，之后再判断是否符合循环体。特点是<strong>先执行，后判断</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>; <span class="comment">// 保存 1-50 之间偶数的和</span></span><br><span class="line">        </span><br><span class="line">		<span class="keyword">int</span> num = <span class="number">2</span>; <span class="comment">// 代表 1-50 之间的偶数</span></span><br><span class="line">        </span><br><span class="line">		<span class="keyword">do</span> &#123;</span><br><span class="line">			<span class="comment">//实现累加求和</span></span><br><span class="line">            sum += num;</span><br><span class="line">            </span><br><span class="line">			num = num + <span class="number">2</span>; <span class="comment">// 每执行一次将数值加2，以进行下次循环条件判断</span></span><br><span class="line">            </span><br><span class="line">		&#125; <span class="keyword">while</span> (num &lt;= <span class="number">50</span>); <span class="comment">// 满足数值在 1-50 之间时重复执行循环</span></span><br><span class="line">        </span><br><span class="line">		System.out.println(<span class="string">" 50以内的偶数之和为："</span> + sum );</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h6><p>for(循环变量初始化; 循环条件; 循环变量变化) {循环体;}</p>
+<p><strong><em>for之后的括号里面，必须要有“;”，其他表达式都可以省略，省略的东西可以往循环体外面或者内部加上就行，但是就是“;”不能省略，胆敢省略信不信eclipse报错给你看？</em></strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>; <span class="comment">// 保存不能被3整除的数之和</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 循环变量 i 初始值为 1 ,每执行一次对变量加 1，只要小于等于 100 就重复执行循环</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">			</span><br><span class="line">			<span class="comment">// 变量 i 与 3 进行求模（取余），如果不等于 0 ，则表示不能被 3 整除</span></span><br><span class="line">			<span class="keyword">if</span> (i % <span class="number">3</span> != <span class="number">0</span>) &#123; </span><br><span class="line">				sum = sum + i; <span class="comment">// 累加求和</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"1到100之间不能被3整除的数之和为："</span> + sum);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/" data-id="ckc8nj7cn00075srhdu7p9l96" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          循环小练习总结
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Java基础（二）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/05/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/">Java基础（四）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/30/Vue%E5%85%A5%E9%97%A8/">Vue入门</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/">循环小练习总结</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/">Java基础（三）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
