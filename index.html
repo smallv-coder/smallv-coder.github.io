@@ -148,6 +148,93 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-7-6实习情况" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/06/7-6%E5%AE%9E%E4%B9%A0%E6%83%85%E5%86%B5/">7-6实习情况</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/06/7-6%E5%AE%9E%E4%B9%A0%E6%83%85%E5%86%B5/" class="archive-article-date">
+  	<time datetime="2020-07-06T10:31:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="2020-7-6"><a href="#2020-7-6" class="headerlink" title="2020-7-6"></a>2020-7-6</h3><p>承上启下的一个星期，这个星期需要做的有一些重要的工作去做，从上一周的汇报总结来看，对于工作项目的整体把握还是有所欠缺，经过领导们的点播，也是发现确实有很多的不足，基础不牢靠，理解不清晰，思维较为幼稚，这些都需要去练习历练才能取得更好的结果。</p>
+<p>这一天接近尾声，做的事情也是针对上一周的开会经历而进行的调整。工作主要有这些：</p>
+<ul>
+<li>修复导入问题</li>
+<li>修复编辑问题</li>
+<li>修复新建问题，新增新建提示按钮功能</li>
+</ul>
+<p>开始细节，Go~</p>
+<p>1.修复导入问题</p>
+<p>在上周临近总结时期，出现一个严重的问题，之前完好的导入功能不晓得更改了那个变量之后出现问题，导入失败，直接将后台错误爆出</p>
+<p>这个捣鼓了很长时间，通过断点调试发现，在保存之前通过一句代码将this.jsonInfo.configValue转为了字符串，但是保存时又转了一遍，由此出现问题，删掉之前转字符串的代码，因为数据导入之后就可以直接包括想要的configValue数据了</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">importPage() &#123;</span><br><span class="line">	<span class="keyword">this</span>.$gchttp.post(<span class="string">"/api/gcreport/v1/navigation/save"</span>, JSON.stringify(<span class="keyword">this</span>.jsonInfo))</span><br><span class="line">    	.then(response =&gt; &#123;</span><br><span class="line">        	<span class="keyword">this</span>.$Message.success(<span class="string">'导入成功'</span>)</span><br><span class="line">            <span class="keyword">this</span>.jsonInfo = &#123;&#125;;</span><br><span class="line">        &#125;).<span class="keyword">catch</span>(failResponse =&gt; &#123;</span><br><span class="line">            <span class="keyword">this</span>.$Message.error(failResponse.errorMessage);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>2.修复编辑的问题</p>
+<p>同样是在上周发现的bug，在点击管理之后点击任意一行的编辑按钮，会导致重复转json数据，同时中间逻辑理解错误，错将所有的数据全部赋值给configValue，导致出现多层方块</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">updatePage()&#123;               <span class="keyword">this</span>.$gchttp.post(<span class="string">"/api/gcreport/v1/navigation/update"</span>,JSON.stringify(<span class="keyword">this</span>.thisPage))</span><br><span class="line">	.then(response =&gt; &#123;</span><br><span class="line">    	<span class="keyword">this</span>.$Message.success(<span class="string">"编辑成功"</span>);</span><br><span class="line">    &#125;).<span class="keyword">catch</span>(failResponse =&gt; &#123;</span><br><span class="line">        <span class="keyword">this</span>.$Message.error(<span class="string">"编辑失败"</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>3.修复新建问题，新增“是否确定删除”按钮功能</p>
+<p>当在某一页面点击新建按钮时，页面会随着新建的按钮中背景图的选择而发生改变，进行预览，但是后面的结点却一直还是上个页面的结点。新需求是点击新建按钮时，后面的图片将会更新，主体跟着新建的来，不会再是老画面，而是全新的新建的页面。</p>
+<p>之后判断页面上的configValue值是否变化，如果变化了，则直接点击新建会提示，在确认想要新建之后，会弹出新建框，继续新建</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;Button size=<span class="string">"small"</span> type=<span class="string">"text"</span> <span class="meta">@click</span>=<span class="string">"addNewPage()"</span>&gt;</span><br><span class="line">	&lt;svg <span class="class"><span class="keyword">class</span></span>=<span class="string">"icon"</span> aria-hidden=<span class="string">"true"</span>&gt;</span><br><span class="line">		&lt;use xlink:href="#icon-_Ttianjiabiaoge"&gt;&lt;/use&gt;</span><br><span class="line">	&lt;/svg&gt;</span><br><span class="line">        新建</span><br><span class="line">&lt;/Button&gt;</span><br><span class="line">addNewPage() &#123;</span><br><span class="line">	<span class="keyword">if</span> (<span class="keyword">this</span>.getNodes === <span class="keyword">this</span>.nodes || <span class="keyword">this</span>.getNodes.length === <span class="number">0</span> ) &#123;</span><br><span class="line">    	<span class="keyword">this</span>.designPage = &#123;&#125;;</span><br><span class="line">        <span class="keyword">this</span>.nodes = [];</span><br><span class="line">        <span class="keyword">this</span>.newPageModal = <span class="keyword">true</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">this</span>.confirmModal = <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;,</span><br><span class="line"></span><br><span class="line">addNewPage1() &#123;</span><br><span class="line">    <span class="keyword">this</span>.confirmModal = <span class="keyword">false</span>;</span><br><span class="line">    <span class="keyword">this</span>.designPage = &#123;&#125;;</span><br><span class="line">    <span class="keyword">this</span>.nodes = [];</span><br><span class="line">    <span class="keyword">this</span>.newPageModal = <span class="keyword">true</span>;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>总之今日的任务就是这样，明日安排：</p>
+<p>1.研究如何将图片以二进制字符串的形式写入数据库</p>
+<p>2.研究在导入json文件的时候如何判别json文件有效</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/06/7-6%E5%AE%9E%E4%B9%A0%E6%83%85%E5%86%B5/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-建立hexo博客网站的详细教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
