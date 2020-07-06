@@ -16,7 +16,7 @@
 <meta property="og:description" content="2020-7-6承上启下的一个星期，这个星期需要做的有一些重要的工作去做，从上一周的汇报总结来看，对于工作项目的整体把握还是有所欠缺，经过领导们的点播，也是发现确实有很多的不足，基础不牢靠，理解不清晰，思维较为幼稚，这些都需要去练习历练才能取得更好的结果。 这一天接近尾声，做的事情也是针对上一周的开会经历而进行的调整。工作主要有这些：  修复导入问题 修复编辑问题 修复新建问题，新增新建提示按钮功">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-06T10:31:09.000Z">
-<meta property="article:modified_time" content="2020-07-06T11:04:23.662Z">
+<meta property="article:modified_time" content="2020-07-06T11:07:24.278Z">
 <meta property="article:author" content="Smallv-Coder">
 <meta name="twitter:card" content="summary">
   
@@ -178,6 +178,8 @@
 <li>修复新建问题，新增新建提示按钮功能</li>
 </ul>
 <p>开始细节，Go~</p>
+<a id="more"></a>
+
 <p>1.修复导入问题</p>
 <p>在上周临近总结时期，出现一个严重的问题，之前完好的导入功能不晓得更改了那个变量之后出现问题，导入失败，直接将后台错误爆出</p>
 <p>这个捣鼓了很长时间，通过断点调试发现，在保存之前通过一句代码将this.jsonInfo.configValue转为了字符串，但是保存时又转了一遍，由此出现问题，删掉之前转字符串的代码，因为数据导入之后就可以直接包括想要的configValue数据了</p>
