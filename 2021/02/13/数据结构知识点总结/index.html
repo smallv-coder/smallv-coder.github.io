@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Smallv-Coder</title>
+  <title>数据结构知识点总结 | Smallv-Coder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Smallv-Coder">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="顺序表链表的区别（存储空间&#x2F;增删改查）、栈和队列的应用（栈是应用，队列会结合操作系统，如调度，说的有理即可）、数组删除元素过程、二叉树前中后序、图【重点】（主要是算法思想，深搜广搜，克鲁斯，prime，弗洛伊德等中文算法表述）  算法定义  是对特定问题求解步骤的一种描述，它是指令的有限序列，其中每一条指令表示一个或多个操作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构知识点总结">
+<meta property="og:url" content="http://yoursite.com/2021/02/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Smallv-Coder">
+<meta property="og:description" content="顺序表链表的区别（存储空间&#x2F;增删改查）、栈和队列的应用（栈是应用，队列会结合操作系统，如调度，说的有理即可）、数组删除元素过程、二叉树前中后序、图【重点】（主要是算法思想，深搜广搜，克鲁斯，prime，弗洛伊德等中文算法表述）  算法定义  是对特定问题求解步骤的一种描述，它是指令的有限序列，其中每一条指令表示一个或多个操作">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://api2.mubu.com/v3/document_image/7cba4c54-8e7c-437f-91d9-434fe09706e5-8880801.jpg">
+<meta property="article:published_time" content="2021-02-13T12:13:43.000Z">
+<meta property="article:modified_time" content="2021-03-23T12:27:41.002Z">
 <meta property="article:author" content="Smallv-Coder">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://api2.mubu.com/v3/document_image/7cba4c54-8e7c-437f-91d9-434fe09706e5-8880801.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Smallv-Coder" type="application/atom+xml">
   
@@ -146,207 +152,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-操作系统知识点总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-数据结构知识点总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">操作系统知识点总结</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2021-03-23T12:28:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>~操作系统定义</p>
-<ul>
-<li>操作系统是指控制和管理整个计算机系统的硬件和软件资源，合理地组织、调度计算机的工作与资源的分配，进而为用户和其他软件提供方便接口与环境的程序集合。操作系统是计算机系统中最基本的系统软件，Windows，Linux，MacOS</li>
-</ul>
-</li>
-<li><p>~操作系统特征</p>
-<ul>
-<li><p>并发</p>
-<ul>
-<li><p>并发是指两个或多个事件在同一时间间隔内发生。操作系统的并发性是指计算机系统中同时存在多个运行的程序</p>
-</li>
-<li><p>并发：同一时间间隔     并行：同一时刻</p>
-</li>
-</ul>
-</li>
-<li><p>共享</p>
-<ul>
-<li><p>共享是指系统中的资源可供内存中多个并发执行的进程共同使用</p>
-</li>
-<li><p>互斥共享方式</p>
-<ul>
-<li>打印机、磁带机</li>
-</ul>
-</li>
-<li><p>同时访问方式</p>
-</li>
-</ul>
-</li>
-<li><p>虚拟</p>
-<ul>
-<li>虚拟是指把一个物理上的实体变为若干逻辑上的对应物，没有并发性就没有虚拟性</li>
-</ul>
-</li>
-<li><p>异步</p>
-<ul>
-<li>多道程序环境允许多个程序并发执行，但由于资源有限，进程的执行并不是一贯到底的，而是走走停停的，它以不可预知的速度向前推进，这就是进程的异步性</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2021/03/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-软件工程知识点总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">软件工程知识点总结</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2021-03-07T12:14:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>~软件是什么</p>
-<ul>
-<li>软件是程序+数据+文档的完整集合</li>
-</ul>
-</li>
-<li><p>~什么是软件危机 </p>
-<ul>
-<li><p>软件危机是指在计算机软件的开发和维护过程中所遇到的一系列严重问题</p>
-</li>
-<li><p>软件危机包括以下两方面的问题</p>
-<ul>
-<li><p>如何开发软件，以满足对软件日益增长的需求</p>
-</li>
-<li><p>如何维护数量不断膨胀的已有软件</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2021/03/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-数据结构知识点总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">数据结构知识点总结</a>
+    <h1 class="article-title" itemprop="name">
+      数据结构知识点总结
     </h1>
   
 
@@ -368,11 +181,439 @@
 </ul>
 </li>
 </ul>
-        
-          <a class="article-more-a" href="/2021/02/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#more">more >></a>
-        
+<a id="more"></a>
+
+<ul>
+<li><p>算法的基本特性</p>
+<ul>
+<li><p>有穷性</p>
+<ul>
+<li>必须保证执行有限步之后结束</li>
+</ul>
+</li>
+<li><p>确定性</p>
+<ul>
+<li>每一步骤必须有确定的定义</li>
+</ul>
+</li>
+<li><p>可行性</p>
+<ul>
+<li>所有操作都必须通过已实现的基本操作进行运算，并在有限次内实现</li>
+</ul>
+</li>
+<li><p>输入</p>
+<ul>
+<li>有0或多个输入</li>
+</ul>
+</li>
+<li><p>输出</p>
+<ul>
+<li>有一个或多个输出</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数据结构定义</p>
+<ul>
+<li><p>数据结构是相互之间存在一种或多种特定关系的数据元素的集合，即带“结构”的数据元素的集合。“结构”就是指数据元素之间存在的关系，分为逻辑结构和存储结构。</p>
+<ul>
+<li><p>逻辑结构</p>
+<ul>
+<li>集合，线性结构，树形结构，图状结构</li>
+</ul>
+</li>
+<li><p>存储结构</p>
+<ul>
+<li>顺序存储，链式存储，索引存储，散列存储</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>线性表的定义</p>
+<ul>
+<li>线性表是具有相同特性数据元素的一个有限序列，只有一个表头，只有一个表尾，且表头没有前驱，表尾没有后继</li>
+</ul>
+</li>
+<li><p>顺序表和链表的比较</p>
+<ul>
+<li><p>基于空间的比较</p>
+<ul>
+<li><p>存储分配的方式</p>
+<ul>
+<li><p>顺序表的存储空间是一次性分配的</p>
+</li>
+<li><p>链表的存储空间是多次分配的</p>
+</li>
+</ul>
+</li>
+<li><p>存储密度（结点值域所占的存储量/结点结构所占的存储总量）</p>
+<ul>
+<li><p>顺序表的存储密度为1</p>
+</li>
+<li><p>链表的存储密度小于1，因为结点中有指针域</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>基于时间的比较</p>
+<ul>
+<li><p>存取方式</p>
+<ul>
+<li><p>顺序表可以随机存取，也可以顺序存取</p>
+</li>
+<li><p>链表只能顺序存取</p>
+</li>
+</ul>
+</li>
+<li><p>插入/删除时移动元素的个数</p>
+<ul>
+<li><p>顺序表平均需要移动近一半元素</p>
+</li>
+<li><p>链表不需要移动元素，只需要修改指针</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>栈的定义</p>
+<ul>
+<li>栈是一种只能在一端进行插入或删除操作的线性表，允许插入删除的那一端称为栈顶，另一端称为栈底，栈底固定不变，栈的特点是先进后出</li>
+</ul>
+</li>
+<li><p>栈的应用</p>
+<ul>
+<li><p>括号匹配</p>
+</li>
+<li><p>表达式求值</p>
+</li>
+<li><p>后缀表达式</p>
+</li>
+<li><p>进制数之间转换</p>
+</li>
+<li><p>迷宫求解</p>
+</li>
+</ul>
+</li>
+<li><p>队列定义</p>
+<ul>
+<li>是一种操作受限的线性表，仅允许在表的一端进行插入，在表的另一端进行删除。可进行插入的一端称为队尾，可进行删除的一端称为队头。队列的特点是先进先出。</li>
+</ul>
+</li>
+<li><p>队的应用</p>
+<ul>
+<li><p>和OS结合的任务调度算法</p>
+</li>
+<li><p>广度优先搜索</p>
+</li>
+<li><p>树的层次遍历</p>
+</li>
+</ul>
+</li>
+<li><p>树的基本术语</p>
+<ul>
+<li><p>层次</p>
+<ul>
+<li>从根开始，根为第一层，根的孩子为第二层，根的孩子的孩子为第三层，以此类推</li>
+</ul>
+</li>
+<li><p>高度/深度</p>
+<ul>
+<li>树中结点的最大层次</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>二叉树的主要性质</p>
+<ul>
+<li><p>非空二叉树上叶子结点数等于双分支结点数加一</p>
+</li>
+<li><p>二叉树的第i层上最多有2的i-1次幂个结点</p>
+</li>
+<li><p>高度或深度为k的二叉树最多有2的k次幂-1个结点</p>
+</li>
+</ul>
+</li>
+<li><p>二叉树的遍历算法</p>
+<ul>
+<li><p>先序遍历 </p>
+<ul>
+<li><p>访问根结点</p>
+</li>
+<li><p>先序遍历左子树</p>
+</li>
+<li><p>先序遍历右子树</p>
+</li>
+</ul>
+</li>
+<li><p>中序遍历</p>
+<ul>
+<li><p>中序遍历左子树</p>
+</li>
+<li><p>访问根结点</p>
+</li>
+<li><p>中序遍历右子树</p>
+</li>
+</ul>
+</li>
+<li><p>后序遍历</p>
+<ul>
+<li><p>后序遍历左子树</p>
+</li>
+<li><p>后序遍历右子树</p>
+</li>
+<li><p>访问根结点</p>
+</li>
+</ul>
+</li>
+<li><p>层次遍历</p>
+<ul>
+<li><p>先建立一个循环队列</p>
+</li>
+<li><p>将二叉树头结点入队列，然后出队列，访问该结点</p>
+</li>
+<li><p>如果它有左子树，则将左子树的根结点入队</p>
+</li>
+<li><p>如果它有右子树，则将右子树的根结点入队</p>
+</li>
+<li><p>然后出队列，对出队列的结点进行访问</p>
+</li>
+<li><p>如此反复，直到队列为空为止</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>图的存储结构</p>
+<ul>
+<li><p>邻接矩阵</p>
+</li>
+<li><p>邻接表</p>
+</li>
+</ul>
+</li>
+<li><p>图的遍历算法</p>
+<ul>
+<li><p>深度优先搜索遍历</p>
+<ul>
+<li>首先访问出发点v，将其标记为已访问过，然后选取与v邻接的未被访问的任意一个顶点w，并访问它，再选取与w邻接的未被访问的任一顶点并访问，以此重复进行</li>
+</ul>
+</li>
+<li><p>广度优先搜索遍历</p>
+<ul>
+<li>首先访问起始顶点v，然后选取与v邻接的全部顶点w1,w2,w2,,,,wn进行访问，再依此访问与w1,w2,w2,,,,wn邻接的全部顶点（已经访问过的除外）。以此类推，直到所有顶点都被访问过为止</li>
+</ul>
+</li>
+<li><p>普利姆算法</p>
+<ul>
+<li><p>从图中任意取出一顶点，把它当成一棵树，然后从与这棵树相接的边中选取一条最短的边，并将这条边及其所连接的顶点也并入这棵树中，此时得到了一棵有两个顶点的树。然后从与这棵树相接的边中选取一条最短的边，并将这条边及其所连顶点并入当前树中，得到一棵有三个顶点的树。以此类推，直到图中所有顶点都被并入树中为止，此时得到的生成树就是最小生成树</p>
+</li>
+<li><p>时间复杂度O(顶点的平方)</p>
+</li>
+</ul>
+</li>
+<li><p>克鲁斯卡尔算法</p>
+<ul>
+<li><p>首先构造一个只含n个顶点的森林，然后依权值从小到大从连通网中选择边加入到森林中，并使森林中不产生回路，直至森林变成一棵树为止</p>
+</li>
+<li><p>时间复杂度 O(边数eloge)</p>
+</li>
+</ul>
+</li>
+<li><p>迪杰斯特拉算法</p>
+<ul>
+<li><p>设有两个顶点集合S和T，集合S中存放图中已找到最短路径的顶点，集合T存放图中剩余顶点。初始状态时，集合S中只包含源点v0，然后不断从集合T中选取到顶点v0路径长度最短的顶点vu并入到集合S中。集合S每并入一个新的顶点vu，都要修改顶点v0到集合T中顶点的最短路径长度值。不断重复这个过程，直到集合T的顶点全部并入到S中为止</p>
+</li>
+<li><p>时间复杂度O(nxn)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>排序</p>
+<ul>
+<li><p>直接插入排序</p>
+<ul>
+<li><p>将数组中的所有元素依次跟前面已经排好的元素相比较，如果选择的元素比已排序的元素小，则交换，直到全部元素都比较过。</p>
+</li>
+<li><p>时间复杂度：最好O(n)  最坏O(nxn)  平均 O(nxn) </p>
+</li>
+<li><p>空间复杂度：O(1) </p>
+</li>
+<li><p>稳定</p>
+</li>
+</ul>
+</li>
+<li><p>折半插入排序</p>
+<ul>
+<li><p>折半插入排序是采用折半查找法来查找插入位置的。折半查找法的一个基本条件是序列已经有序。折半排序就是通过折半的方式去找到合适的位置，然后一次性进行移动，为插入的元素腾出位置。</p>
+</li>
+<li><p>时间复杂度：最好O(nlog2n)  最坏O(nxn)  平均 O(nxn)</p>
+</li>
+<li><p>空间复杂度：O(1)  </p>
+</li>
+<li><p>稳定</p>
+</li>
+</ul>
+</li>
+<li><p>希尔排序</p>
+<ul>
+<li><p>其本质还是插入排序，将待排序数组按照步长gap进行分组，然后将每组的元素利用直接插入排序的方法进行排序；每次将gap折半减小，循环上述操作；当gap=1时，利用直接插入，完成排序。</p>
+</li>
+<li><p>平均时间复杂度： O(nlog2n)</p>
+</li>
+<li><p>空间复杂度：O(1) </p>
+</li>
+<li><p>不稳定</p>
+</li>
+</ul>
+</li>
+<li><p>简单选择排序</p>
+<ul>
+<li><p>从头至尾顺序扫描序列，找出最小的一个关键字，和第一个关键字交换，接着从剩下的关键字中继续这种选择和交换，最终使序列有序</p>
+</li>
+<li><p>时间复杂度： O(nxn)</p>
+</li>
+<li><p>空间复杂度：O(1)</p>
+</li>
+<li><p>不稳定</p>
+</li>
+<li><p>优化方向：</p>
+<ul>
+<li>每次循环可以同时找到最大值和最小值，时间减少一半。冒泡排序也可以。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>堆排序</p>
+<ul>
+<li><p>将一个无序序列调整为一个大顶堆，就可以找出这个序列的最大值，然后将找出的这个值交换到序列的最后，这样，有序序列关键字增加一个，无序序列中关键字减少一个，对新的无序序列重复这样的操作，就实现了排序</p>
+</li>
+<li><p>时间复杂度： O(nlog2n)</p>
+</li>
+<li><p>空间复杂度：O(1)</p>
+</li>
+<li><p>不稳定</p>
+</li>
+</ul>
+</li>
+<li><p>冒泡排序</p>
+<ul>
+<li><p>直观上可以解释为小的元素像气泡一样浮到前面来，大的元素沉到后面去。算法设计思想是两层循环，外层循环每一次操作将最大元素沉底，内层循环每次处理的数据数量减一，沉底的元素就不考虑了。</p>
+</li>
+<li><p>时间复杂度： O(nxn) </p>
+</li>
+<li><p>空间复杂度：O(1) </p>
+</li>
+<li><p>稳定</p>
+</li>
+<li><p>优化方向</p>
+<ul>
+<li><p>设置flag标记，可以减少比较次数</p>
+</li>
+<li><p>记录无序区，有序区无需比较 </p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>快速排序</p>
+<ul>
+<li><p>每一趟选择当前所有子序列中的一个关键字作为枢轴，将子序列中比枢轴小的移到枢轴前边，比枢轴大的移到枢轴后边；当本趟所有子序列都被枢轴以上规则划分完毕后会得到新的一组更短的子序列，它们成为下一趟划分的初始序列集</p>
+</li>
+<li><p>时间复杂度：最好O(nlog2n)  最坏O(nxn)  平均 O(nlog2n)</p>
+</li>
+<li><p>空间复杂度：O(log2n)  </p>
+</li>
+<li><p>不稳定</p>
+</li>
+</ul>
+</li>
+<li><p>二路归并排序</p>
+<ul>
+<li><p>将已有的子序列合并，达到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。</p>
+</li>
+<li><p>时间复杂度： O(nlog2n)</p>
+</li>
+<li><p>空间复杂度：O(n)</p>
+</li>
+<li><p>稳定</p>
+</li>
+</ul>
+</li>
+<li><p><img src="https://api2.mubu.com/v3/document_image/7cba4c54-8e7c-437f-91d9-434fe09706e5-8880801.jpg" alt="img"></p>
+</li>
+</ul>
+</li>
+<li><p>查找</p>
+<ul>
+<li><p>顺序查找法</p>
+<ul>
+<li><p>从表的一端开始，顺序扫描线性表，依次将扫描到的关键字和给定值k比较，若当前扫描的关键字与k相等，则查找成功；若扫描结束，仍未发现关键字等于k的记录，则查找失败</p>
+</li>
+<li><p>时间复杂度/空间复杂度O(n)</p>
+</li>
+</ul>
+</li>
+<li><p>折半查找法</p>
+<ul>
+<li><p>首先，将表中间位置记录的关键字与查找关键字比较，如果两者相等，则查找成功；否则利用中间位置记录将表分成前、后两个子表，如果中间位置记录的关键字大于查找关键字，则进一步查找前一子表，否则进一步查找后一子表。重复以上步骤，直到找到满足条件的结果为止，若找不到，则返回失败。</p>
+</li>
+<li><p>时间复杂度O(logn)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>常见的Hash函数的构造方法</p>
+<ul>
+<li><p>直接定址法</p>
+</li>
+<li><p>数字分析法</p>
+</li>
+<li><p>平方取中法</p>
+</li>
+<li><p>除留余数法</p>
+</li>
+</ul>
+</li>
+<li><p>常见的Hash函数冲突处理方法</p>
+<ul>
+<li><p>开放定址法</p>
+</li>
+<li><p>线性探查法</p>
+</li>
+</ul>
+</li>
+</ul>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -381,16 +622,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/02/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2021/03/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          软件工程知识点总结
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/01/31/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数据库知识点总结</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -405,558 +714,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-数据库知识点总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/31/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">数据库知识点总结</a>
-    </h1>
-  
-
-        
-        <a href="/2021/01/31/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2021-01-31T12:14:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>~数据</p>
-<ul>
-<li>数据是数据库管理的基本对象</li>
-</ul>
-</li>
-<li><p>~数据库技术</p>
-<ul>
-<li>数据库技术是管理数据的技术</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2021/01/31/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/31/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
-  
-    <article id="post-计算机网络知识点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9/">计算机网络总结</a>
-    </h1>
-  
-
-        
-        <a href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9/" class="archive-article-date">
-  	<time datetime="2021-01-18T12:08:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>～虚电路，数据报异同*****   王道P41    数和虚 </p>
-<ul>
-<li><p>连接目的路由分组可靠故障差错</p>
-<ul>
-<li><p>连接的建立</p>
-<ul>
-<li><p>数：不需要</p>
-</li>
-<li><p>虚：必须有</p>
-</li>
-</ul>
-</li>
-<li><p>目的地址</p>
-<ul>
-<li><p>数：每个分组都有完整的目的地址</p>
-</li>
-<li><p>虚：仅在建立连接阶段使用，之后每个分组使用长度较短的虚电路号</p>
-</li>
-</ul>
-</li>
-<li><p>路由选择</p>
-<ul>
-<li><p>数：每个分组独立的进行路由选择和转发</p>
-</li>
-<li><p>虚：属于同一条虚电路的分组，按照同一路由转发</p>
-</li>
-</ul>
-</li>
-<li><p>分组顺序</p>
-<ul>
-<li><p>数：不保证分组的有序到达</p>
-</li>
-<li><p>虚：保证分组的有序到达</p>
-</li>
-</ul>
-</li>
-<li><p>可靠性</p>
-<ul>
-<li><p>数：不保证可靠通信，可靠性由用户主机来保证</p>
-</li>
-<li><p>虚：可靠性由网络保障</p>
-</li>
-</ul>
-</li>
-<li><p>对网络故障的适应性</p>
-<ul>
-<li><p>数：出故障的结点丢失分组，其他分组路径选择发生变化时可以正常传输</p>
-</li>
-<li><p>虚：所有经过故障结点的虚电路均不能正常工作</p>
-</li>
-</ul>
-</li>
-<li><p>差错处理和流量控制</p>
-<ul>
-<li>数：由用户主机进行流量控制，不保证数据报的可靠性</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>虚：可由分组交换网负责，也可由用户主机负责</p>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-建立hexo博客网站的详细教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/05/%E5%BB%BA%E7%AB%8Bhexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/">超级细致的如何在Windows上建立hexo博客网站的终极教程</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/05/%E5%BB%BA%E7%AB%8Bhexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2020-07-05T06:14:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在此鸣谢bilibili的up主codesheep先生，这里是他的原视频，如果想直接进视频看的话完全OK~</p>
-<p><a href="https://www.bilibili.com/video/BV1Yb411a7ty?t=1371" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Yb411a7ty?t=1371</a></p>
-<p>我在这里写出这篇教程，一是表示要重启笔记项目，在之后计划要每天记录我的工作学习经验；二是为之后做个准备，因为如果更换设备，需要重新部署，那么之前的东西就会消失，所以要注意。</p>
-<p>———-手动分割线———-</p>
-        
-          <a class="article-more-a" href="/2020/07/05/%E5%BB%BA%E7%AB%8Bhexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/05/%E5%BB%BA%E7%AB%8Bhexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Java基础（一）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/05/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/">Java基础（一）--Java简介--Java简介</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/05/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-07-05T05:45:23.720Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="Java简介"><a href="#Java简介" class="headerlink" title="Java简介"></a>Java简介</h4><p>JavaSE，包含Java最基础的部分，包括面向对象等</p>
-<p>JavaEE，大型企业级开发</p>
-<p>JavaME，嵌入式开发，基于安卓的手机游戏</p>
-<p>JVM：作为Java运行的虚拟机，处理步骤：源文件–编译器–&gt;字节码文件–解释器–程序结果</p>
-<p>JDK：包含Java开发工具包，没有JDK就没有Java</p>
-<p>JRE：Java运行环境，没有JRE就不能把Java运行得起来。</p>
-<p>所以说，JDK、JRE和JVM的关系时这样的：</p>
-<p>JDK{JRE{JVM}}，互相包含的关系。</p>
-        
-          <a class="article-more-a" href="/2020/07/05/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/05/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Java基础（四）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/">Java基础（四）--数组与方法</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-31T00:50:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="一、数组"><a href="#一、数组" class="headerlink" title="一、数组"></a>一、数组</h4><h6 id="1-1-数组的基础定义"><a href="#1-1-数组的基础定义" class="headerlink" title="1.1 数组的基础定义"></a>1.1 数组的基础定义</h6><p>数组是内存中的一段空间，可以理解为一个“盒子”，里面按照顺序存放很多类型相同的数据，比如学生的成绩、科目信息等等。<strong>数组中的元素都可以通过下标来进行访问，需要注意的是，下标是从0开始的，对应的是数组中第一个元素。</strong></p>
-<h6 id="1-2-如何使用Java中的数组"><a href="#1-2-如何使用Java中的数组" class="headerlink" title="1.2 如何使用Java中的数组"></a>1.2 如何使用Java中的数组</h6>
-        
-          <a class="article-more-a" href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-循环小练习总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/">循环小练习总结</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2020-05-30T10:09:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h6 id="题目1：为指定成绩加分，直到分数大于等于-60-为止，输出加分前和加分后的成绩，并统计加分的次数"><a href="#题目1：为指定成绩加分，直到分数大于等于-60-为止，输出加分前和加分后的成绩，并统计加分的次数" class="headerlink" title="题目1：为指定成绩加分，直到分数大于等于 60 为止，输出加分前和加分后的成绩，并统计加分的次数"></a>题目1：为指定成绩加分，直到分数大于等于 60 为止，输出加分前和加分后的成绩，并统计加分的次数</h6><p>这题肯定巨简单，至少我当时做这个小练习的时候是这么想的。</p>
-        
-          <a class="article-more-a" href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Java基础（三）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/">Java基础（三）--运算符与流程控制语句</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-30T05:27:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><p>算术运算符。赋值运算符、比较运算符、逻辑运算符、位运算符、三元运算符</p>
-        
-          <a class="article-more-a" href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -979,8 +762,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

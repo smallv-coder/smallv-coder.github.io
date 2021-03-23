@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Smallv-Coder</title>
+  <title>计算机网络总结 | Smallv-Coder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Smallv-Coder">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="～虚电路，数据报异同*****   王道P41    数和虚   连接目的路由分组可靠故障差错  连接的建立  数：不需要  虚：必须有    目的地址  数：每个分组都有完整的目的地址  虚：仅在建立连接阶段使用，之后每个分组使用长度较短的虚电路号    路由选择  数：每个分组独立的进行路由选择和转发  虚：属于同一条虚电路的分组，按照同一路由转发    分组顺序  数：不保证分组的有序到达">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络总结">
+<meta property="og:url" content="http://yoursite.com/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9/index.html">
 <meta property="og:site_name" content="Smallv-Coder">
+<meta property="og:description" content="～虚电路，数据报异同*****   王道P41    数和虚   连接目的路由分组可靠故障差错  连接的建立  数：不需要  虚：必须有    目的地址  数：每个分组都有完整的目的地址  虚：仅在建立连接阶段使用，之后每个分组使用长度较短的虚电路号    路由选择  数：每个分组独立的进行路由选择和转发  虚：属于同一条虚电路的分组，按照同一路由转发    分组顺序  数：不保证分组的有序到达">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-18T12:08:08.000Z">
+<meta property="article:modified_time" content="2021-03-23T12:27:05.115Z">
 <meta property="article:author" content="Smallv-Coder">
 <meta name="twitter:card" content="summary">
   
@@ -146,356 +150,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-操作系统知识点总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-计算机网络知识点" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">操作系统知识点总结</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2021-03-23T12:28:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>~操作系统定义</p>
-<ul>
-<li>操作系统是指控制和管理整个计算机系统的硬件和软件资源，合理地组织、调度计算机的工作与资源的分配，进而为用户和其他软件提供方便接口与环境的程序集合。操作系统是计算机系统中最基本的系统软件，Windows，Linux，MacOS</li>
-</ul>
-</li>
-<li><p>~操作系统特征</p>
-<ul>
-<li><p>并发</p>
-<ul>
-<li><p>并发是指两个或多个事件在同一时间间隔内发生。操作系统的并发性是指计算机系统中同时存在多个运行的程序</p>
-</li>
-<li><p>并发：同一时间间隔     并行：同一时刻</p>
-</li>
-</ul>
-</li>
-<li><p>共享</p>
-<ul>
-<li><p>共享是指系统中的资源可供内存中多个并发执行的进程共同使用</p>
-</li>
-<li><p>互斥共享方式</p>
-<ul>
-<li>打印机、磁带机</li>
-</ul>
-</li>
-<li><p>同时访问方式</p>
-</li>
-</ul>
-</li>
-<li><p>虚拟</p>
-<ul>
-<li>虚拟是指把一个物理上的实体变为若干逻辑上的对应物，没有并发性就没有虚拟性</li>
-</ul>
-</li>
-<li><p>异步</p>
-<ul>
-<li>多道程序环境允许多个程序并发执行，但由于资源有限，进程的执行并不是一贯到底的，而是走走停停的，它以不可预知的速度向前推进，这就是进程的异步性</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2021/03/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-软件工程知识点总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">软件工程知识点总结</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2021-03-07T12:14:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>~软件是什么</p>
-<ul>
-<li>软件是程序+数据+文档的完整集合</li>
-</ul>
-</li>
-<li><p>~什么是软件危机 </p>
-<ul>
-<li><p>软件危机是指在计算机软件的开发和维护过程中所遇到的一系列严重问题</p>
-</li>
-<li><p>软件危机包括以下两方面的问题</p>
-<ul>
-<li><p>如何开发软件，以满足对软件日益增长的需求</p>
-</li>
-<li><p>如何维护数量不断膨胀的已有软件</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2021/03/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-数据结构知识点总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">数据结构知识点总结</a>
-    </h1>
-  
-
-        
-        <a href="/2021/02/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2021-02-13T12:13:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>顺序表链表的区别（存储空间/增删改查）、栈和队列的应用（栈是应用，队列会结合操作系统，如调度，说的有理即可）、数组删除元素过程、二叉树前中后序、图【重点】（主要是算法思想，深搜广搜，克鲁斯，prime，弗洛伊德等中文算法表述）</p>
-</li>
-<li><p>算法定义</p>
-<ul>
-<li>是对特定问题求解步骤的一种描述，它是指令的有限序列，其中每一条指令表示一个或多个操作</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2021/02/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-数据库知识点总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/31/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">数据库知识点总结</a>
-    </h1>
-  
-
-        
-        <a href="/2021/01/31/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2021-01-31T12:14:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>~数据</p>
-<ul>
-<li>数据是数据库管理的基本对象</li>
-</ul>
-</li>
-<li><p>~数据库技术</p>
-<ul>
-<li>数据库技术是管理数据的技术</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2021/01/31/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/31/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-计算机网络知识点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9/">计算机网络总结</a>
+    <h1 class="article-title" itemprop="name">
+      计算机网络总结
     </h1>
   
 
@@ -573,11 +235,1235 @@
 <li><p>虚：可由分组交换网负责，也可由用户主机负责</p>
 </li>
 </ul>
-        
-          <a class="article-more-a" href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9/#more">more >></a>
-        
+<a id="more"></a>
+
+<ul>
+<li><p>～电路交换，数据报交换（分组交换）区别**   电和数</p>
+<ul>
+<li><p>建立连接</p>
+<ul>
+<li><p>电：要求</p>
+</li>
+<li><p>数：不要求</p>
+</li>
+</ul>
+</li>
+<li><p>专用物理路径</p>
+<ul>
+<li><p>电：是</p>
+</li>
+<li><p>数：否</p>
+</li>
+</ul>
+</li>
+<li><p>每个分组沿着规定的路径</p>
+<ul>
+<li><p>电：是</p>
+</li>
+<li><p>数：否</p>
+</li>
+</ul>
+</li>
+<li><p>分组按序到达</p>
+<ul>
+<li><p>电：是</p>
+</li>
+<li><p>数：否</p>
+</li>
+</ul>
+</li>
+<li><p>路由器的瘫痪对整体产生影响</p>
+<ul>
+<li><p>电：是</p>
+</li>
+<li><p>数：否</p>
+</li>
+</ul>
+</li>
+<li><p>可用带宽</p>
+<ul>
+<li><p>电：固定</p>
+</li>
+<li><p>数：动态</p>
+</li>
+</ul>
+</li>
+<li><p>可能拥塞的时间点</p>
+<ul>
+<li><p>电：建立呼叫连接的时候</p>
+</li>
+<li><p>数：每个分组传送的时候</p>
+</li>
+</ul>
+</li>
+<li><p>可能有浪费的带宽</p>
+<ul>
+<li><p>电：是</p>
+</li>
+<li><p>数：否</p>
+</li>
+</ul>
+</li>
+<li><p>使用存储转发</p>
+<ul>
+<li><p>电：否</p>
+</li>
+<li><p>数：是</p>
+</li>
+</ul>
+</li>
+<li><p>透明性</p>
+<ul>
+<li><p>电：是</p>
+</li>
+<li><p>数：否</p>
+</li>
+</ul>
+</li>
+<li><p>收费</p>
+<ul>
+<li><p>电：每分钟</p>
+</li>
+<li><p>数：每个分组</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～报文交换，数据报交换（分组交换）比较**   王道P52</p>
+<ul>
+<li><p>报文交换与分组交换的原理如下</p>
+<ul>
+<li>用户数据加上源地址，目的地址，长度，校验和等辅助信息后，封装成PDU，发给下一个结点。下一个结点收到后先暂存报文，待输出线路空闲时再转发给下一个结点，重复该过程直到到达目的结点。每个PDU可单独选择到达目的结点的路径</li>
+</ul>
+</li>
+<li><p>不同之处在于</p>
+<ul>
+<li>分组交换生成的PDU（电源分配单元）的长度较短且是固定的，而报文交换生成的PDU的长度不是固定的</li>
+</ul>
+</li>
+<li><p>正是这一差别使得分组交换具有独特的优点   管理延迟标准应用</p>
+<ul>
+<li><p>缓冲区易于管理</p>
+</li>
+<li><p>分组的平均延迟较小，网络中占用的平均缓冲区更小</p>
+</li>
+<li><p>更易标准化</p>
+</li>
+<li><p>更适合应用</p>
+</li>
+</ul>
+</li>
+<li><p>因此，现在的主流网络基本上都可视为分组交换网络</p>
+</li>
+</ul>
+</li>
+<li><p>～（补）ISO/OSI层次结构以及各层完成的功能**    参考2007</p>
+<ul>
+<li><p>1.物链网输会示用</p>
+<ul>
+<li><p>OSI七层：物理层，数据链路层，网络层，传输层，会话层，表示层，应用层</p>
+<ul>
+<li><p>物理层   0/1</p>
+<ul>
+<li>完成0/1在物理介质上的传输</li>
+</ul>
+</li>
+<li><p>数据链路层   物理数据</p>
+<ul>
+<li>将不可靠的物理链路变成可靠的数据链路，提供点到点通信</li>
+</ul>
+</li>
+<li><p>网络层   路拥网</p>
+<ul>
+<li><p>提供路由选择，拥塞控制，差错控制及网络互联功能，为端到端提供面向连接或者无连接的数据传输服务</p>
+</li>
+<li><p>(1)路由选择与网络控制;(2)提供面向连接(如虚电路网络)或无连接服务(如IP网络);(3)提供异构网络互联</p>
+</li>
+</ul>
+</li>
+<li><p>传输层   进程连接</p>
+<ul>
+<li>提供面向进程，面向连接或者无连接的数据传输服务</li>
+</ul>
+</li>
+<li><p>会话层   进程三功能</p>
+<ul>
+<li>为进程之间的会话提供建立/维护/终止连接的功能</li>
+</ul>
+</li>
+<li><p>表示层   协商交互数据</p>
+<ul>
+<li>协商应用程序间交互的数据格式</li>
+</ul>
+</li>
+<li><p>应用层    网络协议服务</p>
+<ul>
+<li>为网络应用提供协议支持和服务</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～ISO/OSI与TCP/IP区别*****   王道P20</p>
+<ul>
+<li><p>相同   3点  分层协议栈异构</p>
+<ul>
+<li><p>都采取分层的体系结构</p>
+</li>
+<li><p>都是基于独立的协议栈的概念</p>
+</li>
+<li><p>都可以解决异构网络的互联</p>
+</li>
+</ul>
+</li>
+<li><p>不同   5点   三个概念，协议，互联，连接</p>
+<ul>
+<li><p>OSI参考模型的最大贡献就是精确的定义了三个主要概念：服务、协议和接口；而TCP/IP模型在这三个概念上却没有明确区分</p>
+</li>
+<li><p>OSI参考模型产生在协议发明之前，没有偏向于任何特定的协议。TCP/IP模型正好相反，首先出现的是协议，模型实际上是对已有协议的描述，因此不会出现协议不能匹配模型的情况</p>
+</li>
+<li><p>TCP/IP模型在设计之初就考虑到了多种异构网的互联问题，并将网际协议（IP）作为一个单独的重要层次。OSI参考模型最初只考虑到用一种标准的公用数据网将各种不同的系统互联</p>
+</li>
+<li><p>OSI参考模型在网络层支持面向连接和无连接的通信，但在传输层仅有面向连接的通信。而TCP/IP模型认为可靠性是端对端的问题。因此它在网际层仅有一种无连接的通信模式，但传输层支持面向连接和无连接两种模式</p>
+</li>
+<li><p>OSI有七层，TCP/IP有四层</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～交换机建立MAC表的原理*****  </p>
+<ul>
+<li><p>当交换机从某个端口收到一个数据包，它先读取包头中的源MAC地址，这样它就知道源MAC地址的机器是连在哪个端口上的；</p>
+</li>
+<li><p>再去读取包头中的目的MAC地址，并在地址表中查找相应的端口；</p>
+<ul>
+<li><p>如表中有与这目的MAC地址对应的端口，把数据包直接复制到这端口上；</p>
+</li>
+<li><p>如表中找不到相应的端口则把数据包广播到所有端口上，当目的机器对源机器回应时，交换机又可以学习一目的MAC地址与哪个端口对应，在下次传送数据时就不再需要对所有端口进行广播了。不断的循环这个过程，对于全网的MAC地址信息都可以学习到，二层交换机就是这样建立和维护它自己的地址表。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～（补）无线局域网使用CSMA/CA原因以及机制*****   参考2011-2012</p>
+<ul>
+<li><p>原因   信号强度听见难实现环境问题</p>
+<ul>
+<li><p>接收信号的强度往往会远小于发送信号的强度，且在无线介质上信号强度的动态变化范围很大，因此若要实现碰撞检测，则硬件上的花费就会过大</p>
+</li>
+<li><p>在无线通信中，并非所有的站点都能够听见对方，即存在“隐蔽站”和“暴露站”问题</p>
+</li>
+<li><p>无线通信环境下很难实现边发送，边进行冲突检测。环境对无线通信有影响，即使距离相同的接收方，由于所处的环境不同，接收到的相同发送源的无线信号强度不同</p>
+</li>
+<li><p>无线通信环境下存在“暴露站”和“隐藏站”问题</p>
+</li>
+</ul>
+</li>
+<li><p>无线局域网介质访问控制协议的运作机制   帧听  </p>
+<ul>
+<li><p>发送方发送数据前先帧听无线信道是否空闲，如果空闲，等待一个FIS时间，如果无线信道仍空闲，发送一个RTS控制帧</p>
+</li>
+<li><p>否则，一直帧听直到信道为空闲</p>
+</li>
+<li><p>接收方接收到RTS帧后，如果允许发送方发送数据帧，等待一个FIS时间，给发送方发送一个CTS帧</p>
+</li>
+<li><p>发送方接收到CTS帧后, 等待一个FIS时间, 如果信道空闲, 开始发送数据帧</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～（补）集线器，交换机的区别*****</p>
+<ul>
+<li><p>集线器实际是一个多端口的中继器，采用广播方式，不能隔离冲突域</p>
+</li>
+<li><p>交换机实际是一个多端口的网桥，采用存储转发方式，能隔离冲突域，交换机总带宽随端口结点增加而增加。</p>
+</li>
+</ul>
+</li>
+<li><p>～以太网，无线局域网介质访问方法，区别*****   王道P96  </p>
+<ul>
+<li><p>以太网，无线局域网介质访问方法：</p>
+<ul>
+<li>以太网使用的是CSMA/CD 协议，无线局域网使用的是CSMA/CA 协议</li>
+</ul>
+</li>
+<li><p>区别   冲突介质方式</p>
+<ul>
+<li><p>CSMA/CD可以检测冲突，但无法避免；CSMA/CA发送包的同时不能检测到信道上有无冲突，本结点处没有冲突并不意味着在接收结点处就没有冲突，只能尽量避免</p>
+</li>
+<li><p>传输介质不同。CSMA/CD用于总线形以太网，CSMA/CA用于无线局域网802.11a/b/g/n等</p>
+</li>
+<li><p>检测方式不同。CSMA/CD通过电缆中的电压来检测；而CSMA/CA采用能量检测、载波检测和能量载波混合检测三种检测信道空闲的方式</p>
+</li>
+<li><p>总结：CSMA/CA协议的基本思想是在发送数据时先广播告知其他结点，让其他结点在某段时间内不要发送数据，以免出现碰撞。CSMA/CD协议的基本思想是发送前侦听，边发送边侦听，一旦出现碰撞马上停止发送</p>
+<ul>
+<li><p>CSMA/CA工作原理</p>
+<ul>
+<li><p>首先检测信道是否有使用，如果检测出信道繁忙，则等待一段随机时间并进入争用窗口，使用二进制指数退避算法计算随机退避时间，以便再次重新接入信道，直到送出数据。</p>
+</li>
+<li><p>CSMA/CA 还可以用预约信道、ACK帧、RTS/CTS帧等三种机制来实现碰撞避免</p>
+<ul>
+<li><p>预约信道：发送数据的同时向其他站点统计自己传输数据所需时间长度。以便其他站点在这段时间内不发送数据，避免碰撞。</p>
+</li>
+<li><p>ACK帧：接收端如果正确接收到此帧，则向发送端发送确认帧ACK，发送端收到ACK帧，确定数据正确传输</p>
+</li>
+<li><p>RTS/CTS帧：可选的碰撞避免机制，解决“隐蔽站”的问题</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～OSPF的工作原理*****   王道P183-184   【178，179】</p>
+<ul>
+<li><p>交代背景后再作用</p>
+</li>
+<li><p>由于各路由器之间频繁地交换链路状态信息，因此所有路由器最终都能建立一个链路状态数据库。这个数据库实际上就是全网的拓扑结构图，它在全网范围内是一致的（称为链路状态数据库的同步）。然后，每个路由器根据这个全网拓扑结构图，使用Dijkstra最短路径算法计算从自己到各目的网络的最优路径，以此构造自己的路由表。此后，当链路状态发生变化时，每个路由器重新计算到各目的网络的最优路径，构造新的路由表</p>
+</li>
+<li><p>为使OSPF能够用于规模很大的网络，OSPF将一个自治系统再划分为若干更小的范围，称为区域。划分区域的好处是，将利用洪泛法交换链路状态信息的范围局限于每个区域而非整个自治系统，减少了整个网络上的通信量。在一个区域内部的路由器只知道本区域的完整网络拓扑，而不知道其他区域的网络拓扑情况。这些区域也有层次之分。处在上层的域称为主干区域，负责连通其他下层的区域，并且还连接其他自治域</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～子网掩码的作用，子网划分的原因*****   王道P152【148】</p>
+<ul>
+<li><p>作用：子网掩码可屏蔽IP地址中的主机号，而保留网络号与子网号，用于说明IP地址中子网的位置。</p>
+</li>
+<li><p>原因：  利用率网络号灵活字段</p>
+<ul>
+<li><p>IP地址空间的利用率有时很低</p>
+</li>
+<li><p>给每个物理网络分配一个网络号会使路由表变得太大而使网络性能变坏</p>
+</li>
+<li><p>两级的IP地址不够灵活</p>
+</li>
+<li><p>因此，在IP地址中又增加了一个“子网号字段”；使两级IP地址变成了三级IP地址</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～数据链路层流量控制和网络层拥塞控制是什么，区别</p>
+<ul>
+<li><p>流量控制是控制发送方发送数据的速率，使接收方来得及接收。一个基本方法是由接收方控制发送方的数据流。常见的两种方式：停止-等待流量控制和滑动窗口流量控制；</p>
+</li>
+<li><p>若对网络中某一资源的需求超过了该资源所能提供的可用部分，网络性能变坏，即拥塞。拥塞控制就是防止过多的数据注入到网络中，这样可以使网络中的路由器或链路不致过载。</p>
+</li>
+<li><p>区别：</p>
+<ul>
+<li><p>流量控制只涉及发送端和接收端之间点到点的流量控制行为，主要用于保证发送速率与接收端的缓冲容量相匹配，以防止接收端缓冲区不足发生的数据丢失。</p>
+</li>
+<li><p>拥塞控制用于保证网络通畅传送数据，涉及网络所有与之相关的主机和路由转发，是一种全局性的控制措施；</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～路由算法分为几大类？写出一大类中的两种算法名称与特点 *****</p>
+<ul>
+<li><p>两大类与特点：</p>
+<ul>
+<li><p>静态路由选择算法，通常称为非自适应的算法，特点是简单和开销小，但不能及时适应网络状态的变化。对于很小的网络，可以完全采用静态路由选择，自己手动配置每一条路由；静态路由选择算法常有：①最短路径路由选择算法SP②基于流量的路由选择算法FR；</p>
+</li>
+<li><p>动态路由选择算法，也称为自适应路由选择算法，特点是能较好的适应网络状态变化，但实现起来比较复杂，开销也比较大，适用于较复杂的网络; 最常用的有：①距离矢量路由选择DVR②链路状态路由选择LSR</p>
+</li>
+<li><p>著名的开放最短路径优先OSPF协议采用的就是LSR算法。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～距离向量路由与链路状态路由算法的区别*****</p>
+<ul>
+<li><p>在距离-向量路由算法中，每个结点仅与它的直接邻居交谈，它为它的邻居提供从自己到网络中所有其他结点的最低费用估计。</p>
+</li>
+<li><p>在链路状态路由算法中，每个结点通过广播的方式与所有其他结点交谈，但它仅告诉它们与它直接相连的链路的费用。</p>
+</li>
+<li><p>相较之下，距离-向量路由算法有可能遇到路由环路等问题</p>
+</li>
+</ul>
+</li>
+<li><p>～RIP和OSPF的区别</p>
+<ul>
+<li><p>回答参考：上面距离向量路由与链路状态路由算法的知识点 + 下面的文字</p>
+</li>
+<li><p>使用情况不同。</p>
+<ul>
+<li><p>OSPF占用的实际链路带宽比RIP少</p>
+</li>
+<li><p>OSPF使用的CPU时间比RIP少</p>
+</li>
+<li><p>OSPF在网络上达到平衡用的时间比RIP少</p>
+</li>
+<li><p>OSPF适用的内存比RIP大</p>
+</li>
+</ul>
+</li>
+<li><p>适用范围不同。</p>
+<ul>
+<li><p>RIP适用于中小网络，比较简单。没有系统内外、系统分区，边界等概念，不使用分类的路由。</p>
+</li>
+<li><p>OSPF能够用于规模很大的网络，OSPF将一个自治系统再划分为若干更小的范围，称为区域。划分区域的好处是，将利用洪泛法交换链路状态信息的范围局限于每个区域而非整个自治系统，减少了整个网络上的通信量。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～中继器，网桥，路由器的区别和工作原理**</p>
+<ul>
+<li><p>中继器是物理层设备，对数字信号进行放大，通过中继器连接起来的网段仍然是一个局域网，不能隔离冲突域和广播域；</p>
+</li>
+<li><p>网桥是数据链路层设备，一般只有两个端口，常用软件实现；连接到局域网段，采用存储转发，可以隔离冲突域，但不能隔离广播域；</p>
+</li>
+<li><p>路由器是网络层设备，把数据从一个网络发送到另一个网络，可以隔离冲突域和广播域。</p>
+</li>
+<li><p>中继器不能隔离冲突域和广播域，网桥可以隔离冲突域，但不能隔离广播域，路由器可以隔离冲突域和广播域；中继器连接起来的几个网段仍然是局域网，而路由器是连接不同的网络。</p>
+</li>
+</ul>
+</li>
+<li><p>Internet有哪些技术来节省IP地址空间以及原理</p>
+<ul>
+<li><p>划分子网技术</p>
+<ul>
+<li>将IP主机地址部分进一步划分为子网号和主机号两部分，既可节约网络地址，又可充分利用主机号部分的巨大编制能力；</li>
+</ul>
+</li>
+<li><p>NAT技术</p>
+<ul>
+<li>NAT技术能帮助解决令人头痛的IP地址紧缺的问题，而且能使得内外网络隔离，提供一定的网络安全保障，其解决问题的方法是在内部网络中使用内部私有地址，当要访问外部网络时，通过NAT把内部私有地址转换成公有地址在Internet上使用，具体的做法是把IP包内的地址域用公有IP地址来替换。NAT功能通常被集成到路由器、防火墙、ISDN路由器或者是单独的NAT设备中，NAT没备维护一个状态表,用来把私有地址映射到公有地址上去，每个包在NAT设备中被转换成公有地址，发往下一级。</li>
+</ul>
+</li>
+<li><p>无类域间选路CIDR（超网）</p>
+<ul>
+<li>无类域间选路技术也被称为超网，它把划分子网的概念向相反的方向做了扩展,通过借用前三个字节的几位可以把多个连续的C类地址聚集在一起，使得路由器可以忽略网络类别(C类)地址，并可以在决定如何转发数据报时向前再多看几位。</li>
+</ul>
+</li>
+<li><p>代理ARP</p>
+<ul>
+<li>代理ARP也是一种IP网络地址复用技术，它要求网络采用ARP协议进行IP地址-物理地址映射。当主网络上各主机调用ARP解析隐藏网络上主机的物理地址时，网关G(gateway)代替主机响应，但给出的物理地址是G本身在主网络上的物理地址，这样所有进入隐藏网络的数据都首先到达网关G，网关对隐藏网络上的各主机了如指掌，收到进入数据报后，它进一步确定将数据报传给哪台隐藏主机，同样它也掌握主网络上各主机或网关位置，以便对外出数据报进行合适的操作。</li>
+</ul>
+</li>
+<li><p>最终的解决方案——Ipv6</p>
+<ul>
+<li>以上几种方案都没有从根本上解决Ipv4空间危机问题，很明显IP必须进一步发展且更具灵活性。Ipv6保持了IP的优良特性，抛弃或减弱了其缺点，并且在有必要的地方加入了新特性。首先，Ipv6有比Ipv4更长的地址，共有128位地址结构，它提供了一个有效的无线因特网地址空间，其地址长度4倍于Ipv4；其次，Ipv6对头部进行了简化，仅包含7个字段，而Ipv4有13个字段。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～简述分组转发算法*****   王道P149第三点  1-6即可【146】</p>
+<ul>
+<li><p>从数据报的首部提取目的主机的IP地址D，得出目的网络地址</p>
+</li>
+<li><p>若网络N与此路由器直接相连，则把数据报直接交付给目的主机D，这称为路由器的直接交付；否则是间接交付，执行步骤三</p>
+</li>
+<li><p>若路由表中有目的地址为D的特定主机路由（对特定的目的主机指明一个特定的路由，通常是为了控制或测试网络，或出于安全考虑才采用的），则把数据报传送给路由表中所指明的下一跳路由器；否则，执行步骤四</p>
+</li>
+<li><p>若路由表中有到达网络N的路由，则把数据报传送给路由表指明的下一跳路由器；否则，执行步骤五</p>
+</li>
+<li><p>若路由表中有一个默认路由，则把数据报传送给路由表中所指明的默认路由器；否则，执行步骤六</p>
+</li>
+<li><p>报告转发分组出错</p>
+</li>
+</ul>
+</li>
+<li><p>～IP向MAC地址解析原因以及机制【36】</p>
+<ul>
+<li><p>原因  谁在哪做什么</p>
+<ul>
+<li><p>发送方只有在数据链路层将MAC地址封装在帧结构中，才可以以帧的形式发送数据到物理线路上</p>
+</li>
+<li><p>接收方在数据链路层按照“地址匹配”的原则接收数据帧</p>
+</li>
+</ul>
+</li>
+<li><p>相关协议为ARP协议，地址解析协议，主要实现IP地址到MAC地址的映射关系</p>
+</li>
+<li><p>主机互相通信时，首先要知道对方IP地址所对应的物理地址才能在物理网络上进行传输</p>
+</li>
+<li><p>地址解析通过ARP协议完成</p>
+</li>
+</ul>
+</li>
+<li><p>网络层中IP，ARP，ICMP，RARP的作用**</p>
+<ul>
+<li><p>应用层：</p>
+<ul>
+<li><p>HTTP：WWW访问协议</p>
+</li>
+<li><p>DNS：域名解析</p>
+</li>
+</ul>
+</li>
+<li><p>传输层</p>
+<ul>
+<li>TCP：在客户和服务器之间建立连接，提供可靠的数据传输</li>
+</ul>
+</li>
+<li><p>网络层</p>
+<ul>
+<li><p>IP：进行路由选择，实现网络互连。使参与互连的性能各异的网络从用户看起来好像是一个统一的网络。网际协议IP是TCP/IP体系中最主要的协议之一。与IP协议配套使用的还有四个协议：</p>
+</li>
+<li><p>网际控制报文协议ICMP：提供网络传输中的差错检测；提供差错报告和询问报文，以提高 IP 数据交付成功的机会</p>
+</li>
+<li><p>网际组管理协议 IGMP：用于探寻、转发本局域网内的组成员关系。</p>
+</li>
+<li><p>地址解析协议ARP：将目的IP地址映射成物理MAC地址；</p>
+</li>
+<li><p>逆地址解析协议RARP：是解决同一个局域网上的主机或路由器的硬件地址和 IP 地址的映射问题</p>
+</li>
+</ul>
+</li>
+<li><p>网络接口层</p>
+<ul>
+<li>LLC和MAC：提供数据链路层的功能，实现可靠的数据链路</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>TCP拥塞控制有哪些方法，简述原理**     P34，3.1</p>
+<ul>
+<li><p>慢启动阶段：当建立新的TCP连接时，拥塞窗口初始化为一个数据包大小。源端按cwnd（拥塞控制窗口）大小发送数据，每收到一个ACK确认，cwnd就增加一个数据包发送量，这样cwnd就将呈指数增长，源端向网络发送的数据量将急剧增加。由于在发生拥塞时，拥塞窗口会减半或降到1，因此慢启动确保了源端的发送速率最多是链路带宽的两倍。</p>
+</li>
+<li><p>拥塞避免阶段：如果TCP源端发生超时或收到3个相同ACK副本时，即认为网络发生了拥塞。此时就进入拥塞避免阶段，慢启动阈值被设置为当前拥塞窗口大小的一半；如果超时，拥塞窗口被设置为1。如果cwnd&gt;ssthresh(带宽重置慢启动阈值)，TCP就执行拥塞避免算法，在一个RTT内，cwnd将增加1，所以在拥塞避免阶段，cwnd不是呈指数增长，而是线性增长。</p>
+</li>
+<li><p>快速重传和快速恢复阶段：快速重传是当TCP源端收到三个相同的ACK副本时，即认为有数据包丢失，则源端重传丢失的数据包，而不必等待超时。同时将ssthresh设置为当前cwnd值的一半，并且将cwnd减为原先的一半。</p>
+</li>
+</ul>
+</li>
+<li><p>～TCP三次，四次握手原因*****</p>
+<ul>
+<li><p>防止报文段在传输连接建立过程中出现差错。通过三次握手，通信双方的进程之间就建立了一条传输连接，然后就可以使用全双工的方式在该传输链接上正常的传输数据报文段了；可以解决被延迟的分组问题，从而可以保证数据交换的安全和可靠。</p>
+</li>
+<li><p>三次握手完成两个重要的功能，既要双方做好发送数据的准备工作，也要允许双方就初始序列号进行协商。拆除时防止一方再发送信息。</p>
+</li>
+</ul>
+</li>
+<li><p>～TCP三次 ，四次握手过程*****   王道P223-225</p>
+<ul>
+<li><p>三次握手</p>
+<ul>
+<li><p>第一步:客户机的TCP首先向服务器的TCP发送一个连接请求报文段;</p>
+</li>
+<li><p>第二步:服务器的TCP收到连接请求报文段后,如同意建立连接,就向客户机发回确认,并请求建立到客户机的连接,为该TCP连接分配TCP缓存和变量;</p>
+</li>
+<li><p>第三步:当客户机收到确认报文段之后,还要向服务器给出确认,并且也要给该连接分配缓存和变量;</p>
+</li>
+</ul>
+</li>
+<li><p>四次挥手</p>
+<ul>
+<li><p>第一步:客户机打算关闭连接时,向其TCP发送一个连接释放报文段,并停止发送数据.主动关闭TCP连接</p>
+</li>
+<li><p>第二步:服务器收到连接释放报文段之后即发出确认，此时,从客户机到服务器这个方向的连接就释放了,TCP属于半关闭状态;</p>
+</li>
+<li><p>第三步:若服务器已经没有要向客户机发送的数据,就通知TCP释放连接.此时其发出FIN = 1的连接释放报文段;</p>
+</li>
+<li><p>第四步:客户机收到连接释放的报文段之后,必须发出确认,此时TCP连接还未释放,必须经过时间等待计时器设置的时间2MSL之后,客户机才进入连接关闭状态;</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>TCP，UDP不同点以及各自适应场合*****   连接可靠面向n对n首部</p>
+<ul>
+<li><p>TCP面向连接；UDP是无连接的，即发送数据之前不需要建立连接。</p>
+</li>
+<li><p>TCP的逻辑通信信道是全双工的可靠信道。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达,；UDP尽最大努力交付，即不保证可靠交付,是不可靠信道。</p>
+</li>
+<li><p>TCP面向字节流，实际上是TCP把数据看成一连串无结构的字节流；UDP是面向报文的，UDP没有拥塞控制，因此网络出现拥塞不会使源主机的发送速率降低</p>
+</li>
+<li><p>每一条TCP连接只能是点到点的；UDP支持一对一，一对多，多对一和多对多的交互通信</p>
+</li>
+<li><p>TCP首部开销20字节；UDP的首部开销小，只有8个字节。</p>
+</li>
+<li><p>常见使用TCP协议的应用如下：比如HTTP、HTTPS、FTP等传输文件的协议，POP、SMTP等邮件传输的协议</p>
+</li>
+<li><p>常见使用UDP协议的应用如下:QQ语音，在线视频，TFTP。</p>
+</li>
+</ul>
+</li>
+<li><p>～输网址问你通信过程<strong><strong>*****</strong></strong></p>
+<ul>
+<li><p>各层协议以及协议作用:</p>
+<ul>
+<li><p>应用层：</p>
+<ul>
+<li><p>HTTP：www访问协议,实现了应用层浏览器客户端与Web服务器之间会话与数据传输</p>
+</li>
+<li><p>DNS：域名解析服务；</p>
+</li>
+</ul>
+</li>
+<li><p>传输层：</p>
+<ul>
+<li>TCP：在客户和服务器之间建立连接，提供可靠的数据传输；</li>
+</ul>
+</li>
+<li><p>网际层：</p>
+<ul>
+<li><p>IP：进行路由选择和IP包传输</p>
+</li>
+<li><p>ICMP：提供网络传输中的差错检测</p>
+</li>
+<li><p>ARP：将目的IP地址映射成物理MAC地址；</p>
+</li>
+</ul>
+</li>
+<li><p>网络接口层：</p>
+<ul>
+<li><p>LLC子层：逻辑链路控制协议，实现点到点之间可靠数据传输</p>
+</li>
+<li><p>MAC子层：介质访问控制协议，实现介质的有序访问控制；</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>过程描述如下：</p>
+<ul>
+<li><p>利用DNS浏览器分析链接，指向页面URL：<a href="http://www.baidu.com/" target="_blank" rel="noopener">www.baidu.com</a>，查询到<a href="http://www.baidu.com/" target="_blank" rel="noopener">www.baidu.com</a>对应的IP地址；</p>
+</li>
+<li><p>浏览器与baidu的服务器利用TCP协议建立连接；</p>
+</li>
+<li><p>浏览器利用HTTP的GET方法向baidu服务器发送资源请求；</p>
+</li>
+<li><p>baidu发送回应信息；</p>
+</li>
+<li><p>TCP释放连接；</p>
+</li>
+<li><p>浏览器解释回应信息，并以图形化的方式显示。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～DNS流程<strong><strong>*****</strong></strong></p>
+<ul>
+<li><p>客户机向其本地域名服务器发出DNS请求报文</p>
+</li>
+<li><p>本地域名服务器收到请求后，查询本地缓存，假设没有该记录，则以DNS客户的身份向根域名服务器发出解析请求</p>
+</li>
+<li><p>根域名服务器收到请求之后，判断该域名属于.com域，将对应的顶级域名服务器<a href="http://dns.com/" target="_blank" rel="noopener">dns.com</a>的IP地址返回给本地域名服务器</p>
+</li>
+<li><p>本地域名服务器向顶级域名服务器<a href="http://dns.com/" target="_blank" rel="noopener">dns.com</a>发起解析请求报文</p>
+</li>
+<li><p>顶级域名服务器<a href="http://dns.com/" target="_blank" rel="noopener">dns.com</a>收到请求后，判断该域名属于<a href="http://abc.com/" target="_blank" rel="noopener">abc.com</a>域，故将对应的授权域名服务器<a href="http://dns.abc.com/" target="_blank" rel="noopener">dns.abc.com</a>的IP地址返回给本地域名服务器</p>
+</li>
+<li><p>本地域名服务器向授权域名服务器<a href="http://dns.abc.com/" target="_blank" rel="noopener">dns.abc.com</a>发起解析请求报文</p>
+</li>
+<li><p>授权域名服务器<a href="http://dns.abc.com/" target="_blank" rel="noopener">dns.abc.com</a>收到请求后，将查询结果返回给本地域名服务器</p>
+</li>
+<li><p>本地域名服务器将查询结果保存到本地缓存，同时返回给客户机。</p>
+</li>
+</ul>
+</li>
+<li><p>～FTP工作原理*****</p>
+<ul>
+<li><p>FTP在传输层采用的是TCP协议，在网络层采用的是IP协议，FTP的工作工程经历连接建立，传输FTP包与释放连接等三个阶段，其中建立连接又分为控制连接建立与数据连接建立两个阶段。</p>
+</li>
+<li><p>大致过程如下：</p>
+<ul>
+<li><p>主机A建立一个TCP连接到服务器<a href="http://ftp.abc.edu.cn/" target="_blank" rel="noopener">ftp.abc.edu.cn</a>的21号端口，然后发送登陆账号和密码。</p>
+</li>
+<li><p>服务器返回登陆成功信息后，主机A打开一个随机端口，并将该端口号发送给服务器</p>
+</li>
+<li><p>主机A发送读取文件命令，内容为get file，服务器使用20号端口建立一个TCP连接到主机A的随机打开的端口</p>
+</li>
+<li><p>服务器把文件内容通过第二个连接发送给主机A，传输完毕连接关闭</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>邮件收发过程<strong><strong>**</strong></strong>   王道P263   1-6</p>
+<ul>
+<li><p>发信人调用用户代理编辑要发送的邮件。用户代理用SMTP把邮件传送给发送方邮件服务器</p>
+</li>
+<li><p>发送方邮件服务器将邮件放入邮件缓存队列中，等待发送</p>
+</li>
+<li><p>运行在发送方邮件服务器的SMTP客户进程，发现邮件缓存中有待发送的邮件，就向运行在接收方邮件服务器的SMTP服务器进程发起建立TCP连接</p>
+</li>
+<li><p>TCP连接建立后，SMTP客户进程开始向远程SMTP服务器进程发送邮件。当所有待发送邮件发完后，SMTP就关闭所建立的TCP连接</p>
+</li>
+<li><p>运行在接收方邮件服务器中的SMTP服务器进程收到邮件后，将邮件放入收信人的用户邮箱，等待收信人在方便时进行读取</p>
+</li>
+<li><p>收信人打算收信时，调用用户代理，使用POP3（或IMAP）协议将自己的邮件从接收方邮件服务器的用户邮箱中取回（如果邮箱中有来信的话）</p>
+</li>
+</ul>
+</li>
+<li><p>～计算机网络的组成</p>
+<ul>
+<li><p>从组成部分看，可分为硬件、软件和协议</p>
+</li>
+<li><p>从功能组成看，可分为通信子网和资源子网</p>
+</li>
+<li><p>从工作方式看，可分为边缘部分和核心部分</p>
+<ul>
+<li><p>边缘部分由主机组成，进行通信和资源共享</p>
+</li>
+<li><p>核心部分由大量的网络和连接这些网络的路由器组成，为边缘部分提供连通性和交换服务</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～数据通信是计算机网络最基本和最重要的功能</p>
+</li>
+<li><p>～计算机网络的分类</p>
+<ul>
+<li><p>按分布范围分类</p>
+<ul>
+<li><p>广域网WAN</p>
+</li>
+<li><p>城域网MAN</p>
+</li>
+<li><p>局域网LAN</p>
+</li>
+</ul>
+</li>
+<li><p>按拓扑结构分类（举例拓扑结构）</p>
+<ul>
+<li><p>总线型</p>
+</li>
+<li><p>星形</p>
+</li>
+<li><p>环形</p>
+</li>
+<li><p>网状形</p>
+</li>
+</ul>
+</li>
+<li><p>按交换技术分类</p>
+<ul>
+<li><p>电路交换网络</p>
+</li>
+<li><p>报文交换网络</p>
+</li>
+<li><p>分组交换网络</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>电路交换、报文交换和分组交换</p>
+<ul>
+<li><p>电路交换：两结点之间建立一条专用的物理通信路径，传输期间一直独占</p>
+<ul>
+<li><p>优点</p>
+<ul>
+<li><p>通信时延小</p>
+</li>
+<li><p>有序传输</p>
+</li>
+<li><p>没有冲突</p>
+</li>
+<li><p>适用范围广</p>
+</li>
+<li><p>实时性强</p>
+</li>
+<li><p>控制简单</p>
+</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li><p>建立连接时间长</p>
+</li>
+<li><p>线路独占</p>
+</li>
+<li><p>灵活性差</p>
+</li>
+<li><p>难以规格化</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>报文交换：无需建立专门连接，报文携带有目标地址等信息，采用存储转发方式</p>
+<ul>
+<li><p>优点</p>
+<ul>
+<li><p>无需建立连接</p>
+</li>
+<li><p>动态分配线路</p>
+</li>
+<li><p>提高线路可靠性</p>
+</li>
+<li><p>提高线路利用率</p>
+</li>
+<li><p>提供多目标服务</p>
+</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li><p>会引起转发时延</p>
+</li>
+<li><p>要求有较大的缓存空间</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>分组交换：把报文分割成小的数据块，加上必要的控制信息进行传输</p>
+<ul>
+<li><p>数据报：分组之间可能存在不同路径，各个分组分别转发</p>
+</li>
+<li><p>虚电路：在发送方和接收方建立一条逻辑上相连的虚电路，分组沿着虚电路传输</p>
+</li>
+<li><p>优点</p>
+<ul>
+<li><p>无建立时延</p>
+</li>
+<li><p>线路利用率高</p>
+</li>
+<li><p>简化了存储管理</p>
+</li>
+<li><p>加速传输</p>
+</li>
+<li><p>减少了出错概率和重发数据量</p>
+</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li><p>存在传输时延</p>
+</li>
+<li><p>需要传输额外的信息量</p>
+</li>
+<li><p>当分组交换采用数据报服务时，可能会出现失序、丢失或重复分组</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～传输媒介有哪些（知道就行了）</p>
+<ul>
+<li><p>有线：双绞线、同轴电缆、光纤</p>
+</li>
+<li><p>无线：无线电波、微波、红外线和激光</p>
+</li>
+</ul>
+</li>
+<li><p>～通信基础信道分类</p>
+<ul>
+<li><p>单工：只有一个方向的通信，而没有反方向的通信</p>
+</li>
+<li><p>半双工：通信双方都可以发送，接收信息，但不能同时发送和接收信息</p>
+</li>
+<li><p>全双工：通信双方可以同时发送、接收信息</p>
+</li>
+</ul>
+</li>
+<li><p>～调制与编码</p>
+<ul>
+<li><p>调制：把数据变换为模拟信号的过程</p>
+</li>
+<li><p>编码：把数据变换为数字信号的过程</p>
+</li>
+<li><p>数字数据-&gt;数字信号：非归零码，曼彻斯特编码，差分曼彻斯特编码等</p>
+</li>
+<li><p>数字数据-&gt;模拟信号：辐移键控ASK、频移键控FSK、相移键控QSK、正交振幅调制QAM</p>
+</li>
+<li><p>模拟数据-&gt;数字信号：抽样、量化、编码</p>
+</li>
+<li><p>模拟数据-&gt;模拟信号：频分复用技术PCM</p>
+</li>
+</ul>
+</li>
+<li><p>～中继器特点和原理（没答案）</p>
+<ul>
+<li><p>定义</p>
+<ul>
+<li>将信号整形并放大再转发出去，消除信号的失真和衰减问题，具有5-4-3规则</li>
+</ul>
+</li>
+<li><p>原理</p>
+<ul>
+<li>信号再生（而非简单地将衰减的信号放大）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～集线器实际是一个多端口的中继器，对信号进行放大后发到其他所有端口</p>
+</li>
+<li><p>～组帧的三种方法</p>
+<ul>
+<li><p>字符计数法：在帧头部使用一个计数字段来标明帧内字符数</p>
+</li>
+<li><p>首尾定界法：使用特定字符或比特模式定界帧的开始和结束</p>
+</li>
+<li><p>违规编码法：信号传输过程中采用违规的编码来表示帧的起始和终止</p>
+</li>
+</ul>
+</li>
+<li><p>～差错控制分为</p>
+<ul>
+<li><p>检错编码：奇偶校验码、循环冗余码</p>
+</li>
+<li><p>纠错编码：海明码</p>
+</li>
+</ul>
+</li>
+<li><p>～滑动窗口/流量控制协议</p>
+<ul>
+<li><p>停止-等待协议：发送方每发送一帧都要等待接收方的应答信号才能发送下一帧</p>
+<ul>
+<li>发送窗口大小=1，接受窗口大小=1</li>
+</ul>
+</li>
+<li><p>后退N帧协议：发送方一次可发送N帧，按序接受，重传从最后以一个确认开始</p>
+<ul>
+<li>发送窗口大小&gt;1，接受窗口大小=1</li>
+</ul>
+</li>
+<li><p>选择重传协议：发送方一次可发送N帧，可以不按序接收，重传没有确认的帧</p>
+<ul>
+<li>发送窗口大小&gt;1，接受窗口大小&gt;1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～常见的介质访问控制方法</p>
+<ul>
+<li>信道划分介质访问控制、随机访问介质访问控制和轮询访问介质访问控制。其中前者使静态划分信道的方法，而后两者是动态分配信道的方法</li>
+</ul>
+</li>
+<li><p>～信道划分介质访问控制</p>
+<ul>
+<li><p>频分多路复用（FDM）：将多路信号调制到不同频率载波上叠加形成一个复合信号</p>
+</li>
+<li><p>时分多路复用（TDM）：将物理信道按时间分为若干时间片，轮流给不同信号使用</p>
+</li>
+<li><p>波分多路复用（WDM）：在一根光纤中传输多种不同波长（频率）的光信号</p>
+</li>
+<li><p>码分多路复用（CDM）：靠不同的编码来区分各路原始信号</p>
+</li>
+</ul>
+</li>
+<li><p>～随机访问介质访问控制</p>
+<ul>
+<li><p>CSMA协议（载波监听多路访问）</p>
+<ul>
+<li>1-坚持，非坚持，p-坚持</li>
+</ul>
+</li>
+<li><p>CSMA/CA协议（载波侦听多路访问/碰撞避免）</p>
+<ul>
+<li>用二进制指数退避算法来解决碰撞问题</li>
+</ul>
+</li>
+<li><p>CSMA/CD协议（载波侦听多路访问/碰撞检测）</p>
+<ul>
+<li>用二进制指数退避算法来解决碰撞问题</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～广域网协议</p>
+<ul>
+<li><p>PPP协议：面向字节，采用字节填充方式，只支持全双工链路</p>
+</li>
+<li><p>HDLC协议：面向比特，采用0比特插入法，帧类分为信息帧，监督帧和无编码帧</p>
+</li>
+</ul>
+</li>
+<li><p>网桥的概念及其基本原理（没答案）</p>
+<ul>
+<li><p>概念：网桥也叫作桥接器，是连接两个局域网的一种存储/转发设备，它能将一个大的LAN分割为多个网段，或将两个以上的LAN互联为一个逻辑LAN，使得LAN上的所有用户都可以访问服务器。</p>
+</li>
+<li><p>原理</p>
+<ul>
+<li>网桥将两个相似的网络连接起来，并对网络数据的流通进行管理。它工作于数据链路层，不但能扩展网络的距离或范围，而且可提高网络的性能、可靠性和安全性。网络1 和网络2 通过网桥连接后，网桥接收网络1 发送的数据包，检查数据包中的地址，如果地址属于网络1 ，它就将其放弃，相反，如果是网络2 的地址，它就继续发送给网络2.这样可利用网桥隔离信息，将同一个网络号划分成多个网段（属于同一个网络号），隔离出安全网段，防止其他网段内的用户非法访问。</li>
+</ul>
+</li>
+<li><p>特点：把两个或多个以太网通过网桥连接起来变成一个网段</p>
+</li>
+</ul>
+</li>
+<li><p>局域网交换机及其工作原理（没答案）</p>
+<ul>
+<li><p>概念</p>
+<ul>
+<li>指的是用在交换式局域网内进行数据交换的设备</li>
+</ul>
+</li>
+<li><p>原理</p>
+<ul>
+<li>以太网交换机的原理是，它检测从以太端口来的数据帧的源和目的地的MAC（介质访问层）地址，然后与系统内部的动态查找表进行比较，若数据帧的MAC地址不在查找表中，则将该地址加入查找表，并将数据帧发送给相应的目的端口</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～物理层中继系统：中继器，集线器</p>
+</li>
+<li><p>～数据链路层中继系统：网桥或交换机</p>
+</li>
+<li><p>～网络层以上的中继系统：网关</p>
+</li>
+<li><p>IP首部的重要字段（知道哪部分是干啥的即可，提问概率很低）</p>
+<ul>
+<li><p>版本</p>
+<ul>
+<li>IP的版本，版本号为4</li>
+</ul>
+</li>
+<li><p>首部长度</p>
+<ul>
+<li>占4位</li>
+</ul>
+</li>
+<li><p>总长度</p>
+<ul>
+<li>占16位。指首部和数据之和的长度，单位为字节</li>
+</ul>
+</li>
+<li><p>标识</p>
+<ul>
+<li>占16位</li>
+</ul>
+</li>
+<li><p>标志</p>
+<ul>
+<li>占3位，标志字段最低位为MF，MF为1表示后面还有分片；标志字段中间的一位是DF，DF=0时才允许分片</li>
+</ul>
+</li>
+<li><p>片偏移</p>
+<ul>
+<li>占13位，片偏移以8个字节为偏移单位</li>
+</ul>
+</li>
+<li><p>首部校验和</p>
+<ul>
+<li>占16位，只校验分组的首部，而不校验数据部分</li>
+</ul>
+</li>
+<li><p>生存时间（TTL）</p>
+<ul>
+<li>占8位</li>
+</ul>
+</li>
+<li><p>协议</p>
+<ul>
+<li>占8位，指出此分组携带的数据使用何种协议</li>
+</ul>
+</li>
+<li><p>源地址字段</p>
+<ul>
+<li>占4B，标识发送方的IP地址</li>
+</ul>
+</li>
+<li><p>目的地址字段</p>
+<ul>
+<li>占4B，标识接收方的IP地址</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ARP、DHCP与ICMP的工作原理（要清楚原理，能大致说出来）</p>
+<ul>
+<li><p>ARP</p>
+<ul>
+<li><p>地址解析协议ARP的作用就是根据目的主机的IP地址来获得其物理地址，因为将IP数据报封装到MAC帧里面的时候需要知道目的地址的MAC地址</p>
+</li>
+<li><p>工作原理</p>
+<ul>
+<li><p>当主机A要与主机B通信时，ARP可以将主机B的IP地址（192.168.1.2）解析成主机B的MAC地址，以下为工作流程：</p>
+</li>
+<li><p>第1步：根据主机A上的路由表内容，IP确定用于访问主机B的转发IP地址是192.168.1.2。然后A主机在自己的本地ARP缓存中检查主机B的匹配MAC地址。</p>
+</li>
+<li><p>第2步：如果主机A在ARP缓存中没有找到映射，它将询问192.168.1.2的硬件地址，从而将ARP请求帧广播到本地网络上的所有主机。源主机A的IP地址和MAC地址都包括在ARP请求中。本地网络上的每台主机都接收到ARP请求并且检查是否与自己的IP地址匹配。如果主机发现请求的IP地址与自己的IP地址不匹配，它将丢弃ARP请求。</p>
+</li>
+<li><p>第3步：主机B确定ARP请求中的IP地址与自己的IP地址匹配，则将主机A的IP地址和MAC地址<a href="https://baike.baidu.com/item/映射" target="_blank" rel="noopener">映射</a>添加到本地ARP缓存中。</p>
+</li>
+<li><p>第4步：主机B将包含其MAC地址的ARP回复消息直接发送回主机A。</p>
+</li>
+<li><p>第5步：当主机A收到从主机B发来的ARP回复消息时，会用主机B的IP和MAC地址映射更新ARP缓存。本机缓存是有<a href="https://baike.baidu.com/item/生存期" target="_blank" rel="noopener">生存期</a>的，生存期结束后，将再次重复上面的过程。主机B的MAC地址一旦确定，主机A就能向主机B发送IP通信了。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>DHCP</p>
+<ul>
+<li>原理<ul>
+<li>DHCP协议采用UDP作为传输协议，主机发送请求消息到DHCP服务器的67号端口，DHCP服务器回应应答消息给主机的68号端口。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ICMP</p>
+<ul>
+<li><p>ICMP是Internet控制报文协议。它是TCP/IP协议族的一个子协议，用于在IP主机、路由器之间传递控制消息。</p>
+</li>
+<li><p>ICMP提供一致易懂的出错报告信息。发送的出错报文返回到发送原数据的设备，因为只有发送设备才是出错报文的逻辑接受者。发送设备随后可根据ICMP报文确定发生错误的类型，并确定如何才能更好地重发失败的数据包。但是ICMP唯一的功能是报告问题而不是纠正错误，纠正错误的任务由发送方完成。</p>
+</li>
+<li><p>ping使用了ICMP回送请求和回答报文，PING工作在应用层，它直接使用网络层的ICMP，而未使用传输层的TCP或UDP</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～IPv6地址从IPv4的32位增大到了128位；IPv6字节数（16字节）是IPv4（4字节）的平方；IPv6只有在包的源结点才能分片，其他过程不允许分片；IPv6有比IPv4长的多的地址</p>
+</li>
+<li><p>三种路由协议的比较（多看看）</p>
+<ul>
+<li><p>类型：</p>
+<ul>
+<li><p>RIP：内部</p>
+</li>
+<li><p>OSPF：内部</p>
+</li>
+<li><p>BGP：外部</p>
+</li>
+</ul>
+</li>
+<li><p>路由算法</p>
+<ul>
+<li><p>RIP：距离-向量</p>
+</li>
+<li><p>OSPF：链路状态</p>
+</li>
+<li><p>BGP：路径-向量</p>
+</li>
+</ul>
+</li>
+<li><p>传递协议</p>
+<ul>
+<li><p>RIP：UDP</p>
+</li>
+<li><p>OSPF：IP</p>
+</li>
+<li><p>BGP：TCP</p>
+</li>
+</ul>
+</li>
+<li><p>路径选择</p>
+<ul>
+<li><p>RIP：跳数最少</p>
+</li>
+<li><p>OSPF：代价最低</p>
+</li>
+<li><p>BGP：较好，非最佳</p>
+</li>
+</ul>
+</li>
+<li><p>交换结点</p>
+<ul>
+<li><p>RIP：和本结点相邻的路由器</p>
+</li>
+<li><p>OSPF：网络中的所有路由器</p>
+</li>
+<li><p>BGP：和本结点相邻的路由器</p>
+</li>
+</ul>
+</li>
+<li><p>交换内容</p>
+<ul>
+<li><p>RIP当前本路由器知道的全部信息，即自己的路由器</p>
+</li>
+<li><p>OSPF：与本路由器相邻的所有路由器的链路状态</p>
+</li>
+<li><p>BGP：</p>
+<ul>
+<li><p>首次：整个路由表</p>
+</li>
+<li><p>非首次：有变化的部分</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>IGMP可以看看</p>
+</li>
+<li><p>路由器</p>
+<ul>
+<li><p>路由器的特点</p>
+<ul>
+<li>可以用来连接异构网络，完成路由转发，能隔离冲突域和广播域，依照IP地址转发</li>
+</ul>
+</li>
+<li><p>工作原理</p>
+<ul>
+<li>网络中的设备相互通信主要是用它们的<a href="https://baike.baidu.com/item/IP地址/150859" target="_blank" rel="noopener">IP地址</a>，路由器只能根据具体的IP地址来转发数据。路由器的多个端口可以连接多个<a href="https://baike.baidu.com/item/网段/11026985" target="_blank" rel="noopener">网段</a>，每个端口的IP地址的网络地址都必须与所连接的网段的网络地址一致。不同的端口它的网络地址是不同的，所对应的网段也是不同的，这样才能使各个网段中的主机通过自己网段的IP地址把数据发送到路由器上。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>～端口号定义</p>
+<ul>
+<li>端口号只标识本计算机应用层中的各进程，在因特网中不同计算机的相同端口号是没有联系的</li>
+</ul>
+</li>
+<li><p>UDP应用场合与是否可靠</p>
+<ul>
+<li><p>UDP常用于一次性传输较少数据的网络应用，如DNS，SNMP等，因为对于这些应用，若采用TCP，则将为连接创建、维护和拆除带来不小的开销。UDP也常用于多媒体应用（如IP电话、实时视频会议、流媒体等），显然，可靠数据传输对这些应用来说并不是最重要的，但YCP的拥塞控制会导致数据出现较大的延迟，这是它们不可容忍的。</p>
+</li>
+<li><p>UDP提供尽最大努力的交付，即不保证可靠交付，但这并不意味着应用对数据的要求是不可靠的</p>
+</li>
+</ul>
+</li>
+<li><p>TCP协议的特点</p>
+<ul>
+<li><p>TCP是在不可靠的IP层之上实现的可靠的数据传输协议，它主要解决传输的可靠、有序、无丢失和不重复问题。TCP是TCP/IP协议中非常复杂的一个协议</p>
+</li>
+<li><p>主要特点</p>
+<ul>
+<li><p>TCP是面向连接的传输层协议</p>
+</li>
+<li><p>每条TCP连接只能有两个端点，每条TCP连接只能是点对点的（一对一的）</p>
+</li>
+<li><p>TCP提供可靠的交付服务，保证传送的数据无差错、不丢失、不重复且有序</p>
+</li>
+<li><p>TCP提供全双工通信，允许通信双方的应用进程在任何时候都能发送数据，为此TCP连接的两端都设有发送缓存和接收缓存，用来临时存放双向通信的数据</p>
+</li>
+<li><p>TCP是面向字节流的，虽然应用程序和TCP的交互是一次一个数据块（大小不等），但TCP把应用程序交下来的数据仅视为一连串的无结构的字节流</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>理解快重传和快恢复</p>
+</li>
+</ul>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -586,16 +1472,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/01/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2021/01/31/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          数据库知识点总结
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/07/05/%E5%BB%BA%E7%AB%8Bhexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">超级细致的如何在Windows上建立hexo博客网站的终极教程</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -610,353 +1564,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-建立hexo博客网站的详细教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/05/%E5%BB%BA%E7%AB%8Bhexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/">超级细致的如何在Windows上建立hexo博客网站的终极教程</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/05/%E5%BB%BA%E7%AB%8Bhexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2020-07-05T06:14:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在此鸣谢bilibili的up主codesheep先生，这里是他的原视频，如果想直接进视频看的话完全OK~</p>
-<p><a href="https://www.bilibili.com/video/BV1Yb411a7ty?t=1371" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Yb411a7ty?t=1371</a></p>
-<p>我在这里写出这篇教程，一是表示要重启笔记项目，在之后计划要每天记录我的工作学习经验；二是为之后做个准备，因为如果更换设备，需要重新部署，那么之前的东西就会消失，所以要注意。</p>
-<p>———-手动分割线———-</p>
-        
-          <a class="article-more-a" href="/2020/07/05/%E5%BB%BA%E7%AB%8Bhexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/05/%E5%BB%BA%E7%AB%8Bhexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
-  
-    <article id="post-Java基础（一）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/05/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/">Java基础（一）--Java简介--Java简介</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/05/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-07-05T05:45:23.720Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="Java简介"><a href="#Java简介" class="headerlink" title="Java简介"></a>Java简介</h4><p>JavaSE，包含Java最基础的部分，包括面向对象等</p>
-<p>JavaEE，大型企业级开发</p>
-<p>JavaME，嵌入式开发，基于安卓的手机游戏</p>
-<p>JVM：作为Java运行的虚拟机，处理步骤：源文件–编译器–&gt;字节码文件–解释器–程序结果</p>
-<p>JDK：包含Java开发工具包，没有JDK就没有Java</p>
-<p>JRE：Java运行环境，没有JRE就不能把Java运行得起来。</p>
-<p>所以说，JDK、JRE和JVM的关系时这样的：</p>
-<p>JDK{JRE{JVM}}，互相包含的关系。</p>
-        
-          <a class="article-more-a" href="/2020/07/05/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/05/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Java基础（四）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/">Java基础（四）--数组与方法</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-31T00:50:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="一、数组"><a href="#一、数组" class="headerlink" title="一、数组"></a>一、数组</h4><h6 id="1-1-数组的基础定义"><a href="#1-1-数组的基础定义" class="headerlink" title="1.1 数组的基础定义"></a>1.1 数组的基础定义</h6><p>数组是内存中的一段空间，可以理解为一个“盒子”，里面按照顺序存放很多类型相同的数据，比如学生的成绩、科目信息等等。<strong>数组中的元素都可以通过下标来进行访问，需要注意的是，下标是从0开始的，对应的是数组中第一个元素。</strong></p>
-<h6 id="1-2-如何使用Java中的数组"><a href="#1-2-如何使用Java中的数组" class="headerlink" title="1.2 如何使用Java中的数组"></a>1.2 如何使用Java中的数组</h6>
-        
-          <a class="article-more-a" href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E5%9B%9B%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-循环小练习总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/">循环小练习总结</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2020-05-30T10:09:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h6 id="题目1：为指定成绩加分，直到分数大于等于-60-为止，输出加分前和加分后的成绩，并统计加分的次数"><a href="#题目1：为指定成绩加分，直到分数大于等于-60-为止，输出加分前和加分后的成绩，并统计加分的次数" class="headerlink" title="题目1：为指定成绩加分，直到分数大于等于 60 为止，输出加分前和加分后的成绩，并统计加分的次数"></a>题目1：为指定成绩加分，直到分数大于等于 60 为止，输出加分前和加分后的成绩，并统计加分的次数</h6><p>这题肯定巨简单，至少我当时做这个小练习的时候是这么想的。</p>
-        
-          <a class="article-more-a" href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/30/%E5%BE%AA%E7%8E%AF%E5%B0%8F%E7%BB%83%E4%B9%A0%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Java基础（三）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/">Java基础（三）--运算符与流程控制语句</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-30T05:27:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><p>算术运算符。赋值运算符、比较运算符、逻辑运算符、位运算符、三元运算符</p>
-        
-          <a class="article-more-a" href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/30/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -979,8 +1612,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
